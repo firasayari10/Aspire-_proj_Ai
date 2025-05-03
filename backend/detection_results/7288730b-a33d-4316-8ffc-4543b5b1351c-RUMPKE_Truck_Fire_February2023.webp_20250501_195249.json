@@ -1,0 +1,220 @@
+{
+  "timestamp": "2025-05-01T19:52:49.150909",
+  "image_name": "7288730b-a33d-4316-8ffc-4543b5b1351c-RUMPKE_Truck_Fire_February2023.webp",
+  "detections": [
+    {
+      "model": "waste",
+      "class": 6,
+      "class_name": "plastic",
+      "confidence": 0.4645017385482788,
+      "box": [
+        493.3868713378906,
+        247.83596801757812,
+        658.1316528320312,
+        495.0
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.7046440839767456,
+      "box": [
+        12.316636085510254,
+        0.0,
+        145.80410766601562,
+        59.45582580566406
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.6834601163864136,
+      "box": [
+        248.5465087890625,
+        222.42520141601562,
+        397.43994140625,
+        465.6996154785156
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.6573460698127747,
+      "box": [
+        235.0618133544922,
+        16.1992130279541,
+        436.53582763671875,
+        190.97621154785156
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.606558084487915,
+      "box": [
+        354.9848937988281,
+        326.66912841796875,
+        562.1561889648438,
+        479.61212158203125
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.5599707961082458,
+      "box": [
+        5.876186370849609,
+        400.6866760253906,
+        378.6858215332031,
+        495.0
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.4996064305305481,
+      "box": [
+        123.7850570678711,
+        363.9002990722656,
+        322.4904479980469,
+        468.960693359375
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.4216958284378052,
+      "box": [
+        502.88800048828125,
+        409.1253967285156,
+        618.9420166015625,
+        485.5425109863281
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.39192143082618713,
+      "box": [
+        193.2202606201172,
+        0.0,
+        448.1463928222656,
+        53.53108215332031
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.3831346035003662,
+      "box": [
+        193.6259307861328,
+        0.19881176948547363,
+        433.5789794921875,
+        77.82279205322266
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.3541392982006073,
+      "box": [
+        509.4570617675781,
+        309.37542724609375,
+        654.830078125,
+        414.5699768066406
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.3524680435657501,
+      "box": [
+        8.55003833770752,
+        0.0,
+        91.24524688720703,
+        62.475303649902344
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.34172746539115906,
+      "box": [
+        81.87299346923828,
+        286.61883544921875,
+        282.0925598144531,
+        421.29266357421875
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.336381733417511,
+      "box": [
+        0.04072380065917969,
+        134.00222778320312,
+        82.30816650390625,
+        350.48638916015625
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.3309922516345978,
+      "box": [
+        324.4599914550781,
+        128.08163452148438,
+        499.29864501953125,
+        261.4353332519531
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.3218802809715271,
+      "box": [
+        267.8155517578125,
+        215.3567657470703,
+        498.1900329589844,
+        404.14971923828125
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.30110010504722595,
+      "box": [
+        114.24199676513672,
+        163.61752319335938,
+        282.8757629394531,
+        313.8033752441406
+      ]
+    }
+  ],
+  "summary": {
+    "waste_detections": 1,
+    "medical_waste_detections": 0,
+    "battery_detections": 16
+  },
+  "ai_analysis": {
+    "success": true,
+    "analysis": " 1. Environmental impact analysis:\n   From the provided data, it's evident that there is a significant amount of plastic waste being generated. Plastic waste, when not properly managed, can contribute to environmental pollution and harm wildlife. The high volume of organic waste may lead to methane emissions when decomposing in landfills, contributing to greenhouse gas emissions. The high volume of glass waste might lead to increased energy consumption during recycling due to its weight.\n\n2. Proper disposal recommendations:\n   - Plastic waste: Proper disposal methods for plastic waste include recycling, incineration with energy recovery, or safe disposal in a landfill. To reduce environmental impact, prioritize recycling and energy recovery over landfill disposal.\n   - Organic waste: Composting organic waste at home or sending it to a community composting facility can help reduce methane emissions and produce nutrient-rich soil amendments.\n   - Glass waste: Recycling glass waste is a good option to conserve natural resources and reduce energy consumption. However, broken glass should be cautionally disposed to prevent injuries.\n\n3. Safety precautions:\n   - When handling waste, make sure to wear gloves and protective clothing to prevent direct contact with potentially harmful substances.\n   - Waste containing sharp objects should be properly packaged to avoid injuries.\n   - When handling heavy waste like glass or construction debris, use lifting equipment or seek help from multiple people to prevent injuries.\n\n4. Recycling guidelines:\n   - Rinse containers thoroughly before recycling to prevent contamination of other recyclables.\n   - Separate recyclables into appropriate categories (e.g., plastic, paper, metal, glass) to ensure efficient processing at recycling facilities.\n   - Educate yourself about your local recycling program's guidelines, as they may vary based on the specific materials accepted and the method of recycling.\n   - Avoid using excessive packaging when possible to reduce waste generation overall.",
+    "wm_data": []
+  }
+}

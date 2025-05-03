@@ -1,0 +1,108 @@
+.image-dropzone-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.dropzone {
+  width: 80%;
+  padding: 2rem;
+  border: 2px dashed #aaa;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.dropzone.active {
+  border-color: #007bff;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 1rem;
+}
+
+.preview-card {
+  width: 90%;
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Optional: helps center inline content */
+}
+
+.preview-image {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.preview-controls {
+  display: flex;
+  justify-content: center; /* Center buttons horizontally */
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.process-button,
+.remove-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.process-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.remove-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.results-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.detections-box,
+.ai-analysis-box {
+  flex: 1;
+  min-width: 300px;
+  background: #f8f8f8;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.detections-box h3,
+.ai-analysis-box h3 {
+  margin-top: 0;
+}
+
+.model-results {
+  margin-top: 1rem;
+}
+
+.detection-item {
+  margin: 0.5rem 0;
+}
+
+.ai-analysis-content {
+  text-align: left;
+}
+
+.ai-analysis-content p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}

@@ -1,0 +1,64 @@
+{
+  "timestamp": "2025-05-01T20:06:26.514601",
+  "image_name": "computer-in-nature-picture-id885626122_jpg.rf.ec24ff34084c18c588481d646308e42c.jpg",
+  "detections": [
+    {
+      "model": "waste",
+      "class": 6,
+      "class_name": "plastic",
+      "confidence": 0.4154207706451416,
+      "box": [
+        444.6333923339844,
+        312.5059814453125,
+        610.7620849609375,
+        564.53759765625
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.3682519197463989,
+      "box": [
+        80.56951904296875,
+        55.835479736328125,
+        637.6990356445312,
+        190.7706298828125
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.356550395488739,
+      "box": [
+        0.0,
+        0.07819366455078125,
+        605.9229125976562,
+        77.8607406616211
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.26755809783935547,
+      "box": [
+        3.32037353515625,
+        0.0,
+        636.3440551757812,
+        55.57573699951172
+      ]
+    }
+  ],
+  "summary": {
+    "waste_detections": 1,
+    "medical_waste_detections": 0,
+    "battery_detections": 3
+  },
+  "ai_analysis": {
+    "success": true,
+    "analysis": " 1. Environmental Impact Analysis:\n   From the provided data, it appears that the waste generated comprises a significant amount of organic waste (Food), plastic waste (Plastic), glass waste (Glass), paper waste (Paper), and metal waste (Metal).\n\n   - Organic waste (Food): If not properly managed, organic waste can decompose in landfills, producing methane, a potent greenhouse gas responsible for global warming.\n   - Plastic waste: Plastic waste, if not recycled, can end up in water bodies, causing pollution and harm to marine life. It also contributes to land and soil pollution.\n   - Glass: Glass waste, if not recycled, ends up in landfills, taking up space and contributing to land degradation.\n   - Paper: Paper waste can also lead to landfill problems and deforestation if not recycled.\n   - Metal: Metal waste, if not recycled, can lead to pollution in the environment, especially if it contains hazardous substances.\n\n2. Proper Disposal Recommendations:\n   - Organic waste: Composting or anaerobic digestion can help manage organic waste effectively, reducing the amount of methane produced and converting it into a useful fertilizer or energy source.\n   - Plastic waste: Recycling plastic waste where possible is crucial. Proper disposal methods should be implemented to prevent plastic waste from entering water bodies or landfills.\n   - Glass: Recycling glass is also important to reduce waste in landfills. Marketable glass products can be made from recycled glass, reducing the need for raw materials.\n   - Paper: Recycling paper reduces the demand for virgin paper, conserves forests, and saves energy compared to producing paper from raw materials.\n   - Metal: Recycling metal not only reduces the need for virgin materials but also conserves energy and can help in managing hazardous waste if the metal contains such substances.\n\n3. Safety Precautions:\n   - Always wear protective clothing, such as gloves and masks, when handling waste.\n   - Ensure proper ventilation when dealing with potentially hazardous waste.\n   - Follow local regulations and guidelines regarding waste management and disposal.\n   - Properly dispose of sharp objects to prevent injuries.\n\n4. Recycling Guidelines:\n   - Clean recyclables properly, as contaminated recyclables can contaminate the entire batch, making it unfit for reuse.\n   - Follow local recycling guidelines, as they may vary depending on the infrastructure and facilities available.\n   - Educate yourself and others about the importance of recycling and the proper methods for separating and handling different types of waste.\n   - Don't put recyclables in plastic bags as they can get tangled in recycling machinery. If necessary, flatten cardboard boxes and break down other large recyclables to save space in the recycling bin.\n\nIn conclusion, proper waste management involves reduction, reuse, recycling, and safe disposal of waste. Properly managing waste not only helps reduce environmental pollution but also conserves resources and energy. It is important to follow local regulations and guidelines and to educate oneself and others about responsible waste management practices.",
+    "wm_data": []
+  }
+}

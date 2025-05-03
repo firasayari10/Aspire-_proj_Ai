@@ -1,0 +1,148 @@
+{
+  "timestamp": "2025-05-03T18:48:45.878814",
+  "image_name": "best-AA-batteries.jpg",
+  "detections": [
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.9367708563804626,
+      "box": [
+        73.18021392822266,
+        636.7500610351562,
+        464.0792541503906,
+        988.80859375
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.9220238327980042,
+      "box": [
+        204.96133422851562,
+        110.07941436767578,
+        581.9067993164062,
+        498.6970520019531
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.9178842902183533,
+      "box": [
+        708.9449462890625,
+        190.3637237548828,
+        1165.212646484375,
+        468.73468017578125
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.8968971967697144,
+      "box": [
+        744.3036499023438,
+        441.59429931640625,
+        1060.3323974609375,
+        872.7567138671875
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.872523844242096,
+      "box": [
+        606.8342895507812,
+        600.5148315429688,
+        758.6334838867188,
+        921.3156127929688
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.8702161908149719,
+      "box": [
+        346.605712890625,
+        535.3109130859375,
+        516.9497680664062,
+        846.52197265625
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.8389056921005249,
+      "box": [
+        472.41571044921875,
+        326.4566345214844,
+        628.552490234375,
+        787.19921875
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.8075518608093262,
+      "box": [
+        490.326904296875,
+        867.6746215820312,
+        818.8976440429688,
+        1098.06201171875
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.40837371349334717,
+      "box": [
+        264.0068359375,
+        1159.4268798828125,
+        726.47265625,
+        1200.0
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.39812958240509033,
+      "box": [
+        320.4175720214844,
+        1160.690185546875,
+        894.2413330078125,
+        1200.0
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.3633500635623932,
+      "box": [
+        270.9817199707031,
+        1162.6138916015625,
+        551.208251953125,
+        1200.0
+      ]
+    }
+  ],
+  "summary": {
+    "waste_detections": 0,
+    "medical_waste_detections": 0,
+    "battery_detections": 11
+  },
+  "ai_analysis": {
+    "success": true,
+    "analysis": " 1. Environmental Impact Analysis:\n   The provided data shows the composition of waste generated from various sources. The main categories are plastic, paper, glass, organic waste, and metal.\n\n   - Plastic waste is a significant concern due to its non-biodegradable nature, which leads to pollution in land and water bodies.\n   - Organic waste, if not managed properly, can lead to methane emissions when decomposing in landfills, contributing to greenhouse gas emissions.\n   - The amount of paper waste might seem high, but it can be more environmentally friendly if it's recycled appropriately.\n   - Glass and metal waste, while not as concerning in terms of pollution, should still be properly managed to conserve resources and reduce waste.\n\n2. Proper Disposal Recommendations:\n   - Plastic waste: Reduce, reuse, and recycle as much as possible. Proper disposal includes sending plastics to recycling centers if they are labeled as recyclable.\n   - Organic waste: Compost organic waste at home if possible, or send it to a commercial composting facility. Avoid sending organic waste to landfill if possible.\n   - Paper waste: Recycle paper products whenever possible. Do not send infectious or contaminated paper to recycling centers; these should be disposed of as medical waste.\n   - Glass and metal waste: These can be recycled at designated recycling centers.\n\n3. Safety Precautions:\n   - Always wear protective gloves and masks when handling waste, especially infectious or hazardous materials.\n   - Do not touch waste with bare hands.\n   - Avoid inhaling dust or fumes from waste materials.\n   - Follow local regulations and guidelines for waste disposal and handling.\n\n4. Recycling Guidelines:\n   - Check local recycling guidelines for specific materials accepted in your area.\n   - Properly clean and sort recyclable materials before putting them in recycling bins.\n   - Some materials, such as batteries and electronics, should never be placed in regular recycling bins due to hazardous materials; these should be properly disposed of at designated facilities.\n   - Keep recyclables dry and free of food waste.\n   - Paper, cardboard, metal cans, and glass should be rinsed clean and flattened before recycling.\n   - Plastic containers should be cleaned and dried, but do not put them in recycling if they have the numbers 3, 6, or 7 on the bottom as they are often not recyclable. The numbers 1 and 2 are more commonly recyclable.",
+    "wm_data": []
+  }
+}

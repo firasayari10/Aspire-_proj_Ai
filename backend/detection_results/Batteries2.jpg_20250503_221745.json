@@ -1,0 +1,201 @@
+{
+  "timestamp": "2025-05-03T22:17:45.073631",
+  "image_name": "Batteries2.jpg",
+  "detections": [
+    {
+      "model": "waste",
+      "class": 0,
+      "class_name": "glass",
+      "confidence": 0.3491085171699524,
+      "box": [
+        1416.624755859375,
+        0.0,
+        1980.0,
+        1207.9129638671875
+      ]
+    },
+    {
+      "model": "waste",
+      "class": 0,
+      "class_name": "glass",
+      "confidence": 0.2679293751716614,
+      "box": [
+        0.1728951781988144,
+        0.0,
+        1972.675048828125,
+        1312.0
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 1,
+      "class_name": "Baterai AA",
+      "confidence": 0.885067880153656,
+      "box": [
+        172.9364471435547,
+        477.393310546875,
+        658.020751953125,
+        646.3804321289062
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 0,
+      "class_name": "Baterai 9v",
+      "confidence": 0.8175065517425537,
+      "box": [
+        351.9599609375,
+        159.8103790283203,
+        653.7166748046875,
+        494.75811767578125
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.7754086256027222,
+      "box": [
+        633.5151977539062,
+        351.7461853027344,
+        798.744140625,
+        756.900390625
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 0,
+      "class_name": "Baterai 9v",
+      "confidence": 0.7445034980773926,
+      "box": [
+        1019.5282592773438,
+        728.125244140625,
+        1309.6549072265625,
+        1199.926025390625
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 0,
+      "class_name": "Baterai 9v",
+      "confidence": 0.7314284443855286,
+      "box": [
+        792.5315551757812,
+        142.56292724609375,
+        1251.16357421875,
+        345.7242431640625
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 1,
+      "class_name": "Baterai AA",
+      "confidence": 0.5956498980522156,
+      "box": [
+        800.4254760742188,
+        142.0863800048828,
+        1245.2392578125,
+        344.388916015625
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 0,
+      "class_name": "Baterai 9v",
+      "confidence": 0.5714854598045349,
+      "box": [
+        1737.7955322265625,
+        824.0298461914062,
+        1979.590576171875,
+        984.6439208984375
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 1,
+      "class_name": "Baterai AA",
+      "confidence": 0.5174005031585693,
+      "box": [
+        1185.9766845703125,
+        356.18438720703125,
+        1425.2366943359375,
+        824.8225708007812
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 0,
+      "class_name": "Baterai 9v",
+      "confidence": 0.5026572942733765,
+      "box": [
+        421.93975830078125,
+        69.72773742675781,
+        753.1439819335938,
+        444.9360046386719
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 1,
+      "class_name": "Baterai AA",
+      "confidence": 0.4594115614891052,
+      "box": [
+        610.2855224609375,
+        733.7091064453125,
+        812.0530395507812,
+        1110.2535400390625
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 0,
+      "class_name": "Baterai 9v",
+      "confidence": 0.3655954897403717,
+      "box": [
+        307.2372741699219,
+        520.9588012695312,
+        525.358154296875,
+        1048.9156494140625
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.3078974783420563,
+      "box": [
+        608.8919067382812,
+        728.6939697265625,
+        815.5732421875,
+        1114.22705078125
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 1,
+      "class_name": "Baterai AA",
+      "confidence": 0.2890208959579468,
+      "box": [
+        308.2009582519531,
+        529.0834350585938,
+        521.9384155273438,
+        1045.6558837890625
+      ]
+    }
+  ],
+  "summary": {
+    "waste_detections": 2,
+    "medical_waste_detections": 0,
+    "battery_detections": 13
+  },
+  "ai_analysis": {
+    "success": true,
+    "analysis": " 1. Environmental Impact Analysis:\n   - 9V Batteries: These contain mercury, cadmium, and steel, posing harm to the environment if improperly disposed of. Mercury can contaminate soil and water and harm wildlife and humans due to its toxicity.\n   - Dry Cells (non-rechargeable alkaline batteries): Alkaline batteries are generally non-toxic and pose less risk to the environment compared to other types. However, they still contain cadmium, nickel, and manganese, which can leach into the soil if disposed improperly.\n   - Glass: If disposed of improperly, glass waste can pose a physical hazard by breaking and causing injury, and it takes a long time to decompose in the landfill. If recycled, it can be reused to manufacture new glass products, reducing the demand for raw materials and conserving natural resources.\n   - AA Batteries: AA batteries also contain zinc, manganese, and lithium, making them potentially harmful if disposed of improperly. Lithium is relatively non-toxic but becomes harmful if it reacts with other waste in the landfill, produces hydrogen gas, and causes fires.\n\n2. Proper Disposal Recommendations:\n   - 9V Batteries: Take them to a local hazardous waste collection center, if available. Many retail stores and waste management facilities have special collections for spent batteries.\n   - Dry Cells and AA Batteries: Follow the recommendations for 9V batteries if your local hazardous waste collection doesn't accept them. In their absence, keep them in a protective container before placing them in the household waste bin.\n   - Glass: Rinse glass waste and then place it in the recycling bin if it's accepted by your local recycling program. Check the bottom of the glass container for a recycling symbol and recycling code (usually numerical) to confirm its acceptance.\n\n3. Safety Precautions:\n   - Handle all batteries with care to avoid exposure to their corrosive or toxic materials. Wear gloves and avoid contact with broken or leaking batteries.\n   - Do not attempt to recharge lithium, nickel-metal hydride, and nickel-cadmium batteries at home as it can cause them to overheat and pose fire hazards.\n   - Secure your waste storage area to prevent children and pets from accessing the batteries.\n\n4. Recycling Guidelines:\n   - 9V Batteries: Some countries allow the recycling of 9V batteries, but they require certain collection programs due to their hazardous components, so check with your local waste management for acceptable recycling options.\n   - Dry Cells and AA Batteries: These batteries can be recycled at select recycling facilities, but like 9V batteries, they require specific collection programs due to their hazardous components.\n   - Glass: Recyclable glass is typically sorted and processed at recycling centers or designated recycling bins. Check the specific glass recycling programs in your area for accepted glass types.\n   - Always check for local regulations regarding the collection and recycling of hazardous waste to ensure compliance and environmentally friendly waste management.",
+    "detected_waste_types": [
+      "baterai 9v",
+      "drycell",
+      "glass",
+      "baterai aa"
+    ]
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "timestamp": "2025-05-01T19:45:27.555880",
+  "image_name": "7288730b-a33d-4316-8ffc-4543b5b1351c-RUMPKE_Truck_Fire_February2023.webp",
+  "detections": [
+    {
+      "model": "waste",
+      "class": 6,
+      "class_name": "plastic",
+      "confidence": 0.4645017385482788,
+      "box": [
+        493.3868713378906,
+        247.83596801757812,
+        658.1316528320312,
+        495.0
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.7046440839767456,
+      "box": [
+        12.316636085510254,
+        0.0,
+        145.80410766601562,
+        59.45582580566406
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.6834601163864136,
+      "box": [
+        248.5465087890625,
+        222.42520141601562,
+        397.43994140625,
+        465.6996154785156
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.6573460698127747,
+      "box": [
+        235.0618133544922,
+        16.1992130279541,
+        436.53582763671875,
+        190.97621154785156
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.606558084487915,
+      "box": [
+        354.9848937988281,
+        326.66912841796875,
+        562.1561889648438,
+        479.61212158203125
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.5599707961082458,
+      "box": [
+        5.876186370849609,
+        400.6866760253906,
+        378.6858215332031,
+        495.0
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.4996064305305481,
+      "box": [
+        123.7850570678711,
+        363.9002990722656,
+        322.4904479980469,
+        468.960693359375
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.4216958284378052,
+      "box": [
+        502.88800048828125,
+        409.1253967285156,
+        618.9420166015625,
+        485.5425109863281
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.39192143082618713,
+      "box": [
+        193.2202606201172,
+        0.0,
+        448.1463928222656,
+        53.53108215332031
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.3831346035003662,
+      "box": [
+        193.6259307861328,
+        0.19881176948547363,
+        433.5789794921875,
+        77.82279205322266
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.3541392982006073,
+      "box": [
+        509.4570617675781,
+        309.37542724609375,
+        654.830078125,
+        414.5699768066406
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.3524680435657501,
+      "box": [
+        8.55003833770752,
+        0.0,
+        91.24524688720703,
+        62.475303649902344
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.34172746539115906,
+      "box": [
+        81.87299346923828,
+        286.61883544921875,
+        282.0925598144531,
+        421.29266357421875
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.336381733417511,
+      "box": [
+        0.04072380065917969,
+        134.00222778320312,
+        82.30816650390625,
+        350.48638916015625
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.3309922516345978,
+      "box": [
+        324.4599914550781,
+        128.08163452148438,
+        499.29864501953125,
+        261.4353332519531
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.3218802809715271,
+      "box": [
+        267.8155517578125,
+        215.3567657470703,
+        498.1900329589844,
+        404.14971923828125
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.30110010504722595,
+      "box": [
+        114.24199676513672,
+        163.61752319335938,
+        282.8757629394531,
+        313.8033752441406
+      ]
+    }
+  ],
+  "summary": {
+    "waste_detections": 1,
+    "medical_waste_detections": 0,
+    "battery_detections": 16
+  },
+  "ai_analysis": {
+    "success": true,
+    "analysis": " 1. Environmental Impact Analysis:\n   From the provided data, it's evident that there are a variety of waste types generated, ranging from general waste, biodegradable waste, plastic, and electronic waste. This diversity of waste implies a broad environmental impact.\n\n   - General Waste: This category is not specified further, but it often includes materials that cannot be recycled or composted, such as plastic bags, food scraps, and paper. improper disposal of these can lead to land and water pollution, harming aquatic life, soil fertility, and air quality.\n\n   - Biodegradable Waste: If not managed properly, biodegradable waste can lead to methane emissions when decomposing in landfills, contributing to greenhouse gas emissions and global warming.\n\n   - Plastic Waste: Plastic waste, such as PET, PVC, and HDPE, poses a significant threat to the environment, particularly marine life, as plastic waste can end up in the ocean. Due to its non-biodegradable nature, it can persist in the environment for hundreds of years.\n\n   - Electronic Waste (e-Waste): e-Waste contains harmful substances like lead, mercury, and cadmium, which can leach into the soil and groundwater when not disposed of correctly, causing potential health issues and environmental contamination.\n\n2. Proper Disposal Recommendations:\n   - General Waste: Separate and properly dispose of general waste at designated disposal sites. Minimize waste generation by adopting waste reduction, reuse, and recycling practices.\n\n   - Biodegradable Waste: Compost biodegradable waste at home or at authorized composting facilities to convert organic waste into nutrient-rich soil. Avoid contaminating recyclables with food waste.\n\n   - Plastic Waste: Do not throw plastic waste into the ocean or natural bodies of water. Ensure plastic waste is collected and disposed of at designated plastic recycling facilities. Promote the use of reusable bags and containers to reduce plastic waste generation.\n\n   - Electronic Waste: Properly dispose of e-Waste at designated e-Waste recycling facilities. Be cautious when handling devices containing hazardous substances and consult with professional e-Waste collectors for safe disposal.\n\n3. Safety Precautions:\n   - Always wear protective gear, such as gloves and masks, when handling waste to protect against potential contamination.\n   - Minimize direct contact with waste and practice proper hygiene after handling waste to prevent potential exposure to harmful substances.\n   - Store waste in secure containers to prevent waste spills and ensure proper transportation and disposal.\n\n4. Recycling Guidelines:\n   - Familiarize yourself with local recycling programs and guidelines.\n   - Ensure that recyclable waste is clean, dry, and free of contaminants before disposal.\n   - Properly sort recyclables into the appropriate categories, such as paper, plastic, glass, and metal, to ensure efficient processing at recycling facilities.\n\nBy following these recommendations, waste management can be improved to minimize environmental impact, promote public safety, and increase recycling rates. Additionally, community education and advocacy are key to promoting sustainable waste management practices.",
+    "wm_data": []
+  }
+}

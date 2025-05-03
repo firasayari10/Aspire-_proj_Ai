@@ -1,0 +1,100 @@
+{
+  "timestamp": "2025-05-03T17:54:00.041680",
+  "image_name": "ChatGPT Image May 1, 2025, 06_41_23 PM.png",
+  "detections": [
+    {
+      "model": "waste",
+      "class": 5,
+      "class_name": "organic",
+      "confidence": 0.2670923173427582,
+      "box": [
+        508.52728271484375,
+        559.30419921875,
+        751.5188598632812,
+        753.011474609375
+      ]
+    },
+    {
+      "model": "medwaste",
+      "class": 0,
+      "class_name": "biohazard",
+      "confidence": 0.8831002116203308,
+      "box": [
+        361.77069091796875,
+        299.0208740234375,
+        956.5518798828125,
+        796.0330200195312
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.8342214226722717,
+      "box": [
+        494.17462158203125,
+        539.8718872070312,
+        770.0322265625,
+        758.9054565429688
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.611398458480835,
+      "box": [
+        0.0,
+        198.00772094726562,
+        558.5220947265625,
+        967.419921875
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.474382609128952,
+      "box": [
+        163.5931396484375,
+        202.41796875,
+        784.3001708984375,
+        763.7705078125
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.4231967628002167,
+      "box": [
+        118.78007507324219,
+        63.127174377441406,
+        995.6043090820312,
+        796.9652099609375
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.33165720105171204,
+      "box": [
+        539.69970703125,
+        431.11395263671875,
+        1019.1608276367188,
+        770.3546142578125
+      ]
+    }
+  ],
+  "summary": {
+    "waste_detections": 1,
+    "medical_waste_detections": 1,
+    "battery_detections": 5
+  },
+  "ai_analysis": {
+    "success": true,
+    "analysis": " 1. Environmental impact analysis:\n   From the provided data, it appears that the waste generated is a mix of municipal solid waste (MSW), hazardous waste (HW), and construction & demolition waste (C&D).\n\n   - MSW, primarily organic waste, contributes to methane emissions if not properly managed, which has a significant impact on climate change.\n   - HW, like batteries and paint, contain heavy metals and harmful chemicals that can contaminate soil and water bodies if not disposed of properly, posing a risk to both human health and the environment.\n   - C&D waste, if not managed correctly, can cause soil pollution and dust nuisance, leading to respiratory issues.\n\n2. Proper disposal recommendations:\n   - MSW should be transported to a sanitary landfill, where it is compacted and covered daily to prevent methane emissions.\n   - HW should be taken to an authorized hazardous waste facility for treatment and disposal in compliance with local, state, and federal regulations.\n   - C&D waste should be managed at construction waste recycling facilities, where reusable materials can be separated and recycled.\n\n3. Safety precautions:\n   - Protective clothing, including gloves, boots, and respiratory protection, should be worn when handling any type of waste to prevent exposure to potential hazards.\n   - All waste must be transported in sealed, designated containers to prevent leaks and spills.\n   - Waste management facilities should have proper ventilation and safety equipment to protect workers from toxic fumes and dust.\n\n4. Recycling guidelines:\n   - Organic waste can be composted for use as fertilizer in farming and gardening.\n   - Aluminum cans, glass, paper, and plastics (recycling codes 1, 2, 4, and 5) can be recycled at local recycling centers.\n   - Electronic waste should be brought to an e-waste recycling facility, where precious metals can be recovered.\n   - Batteries should be recycled at designated battery recycling centers.\n   - Construction materials, such as concrete, metal, and wood, can be reused or recycled at construction waste recycling facilities.",
+    "wm_data": []
+  }
+}

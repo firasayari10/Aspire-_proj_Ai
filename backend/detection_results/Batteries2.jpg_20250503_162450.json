@@ -1,0 +1,196 @@
+{
+  "timestamp": "2025-05-03T16:24:50.433378",
+  "image_name": "Batteries2.jpg",
+  "detections": [
+    {
+      "model": "waste",
+      "class": 0,
+      "class_name": "glass",
+      "confidence": 0.3491085171699524,
+      "box": [
+        1416.624755859375,
+        0.0,
+        1980.0,
+        1207.9129638671875
+      ]
+    },
+    {
+      "model": "waste",
+      "class": 0,
+      "class_name": "glass",
+      "confidence": 0.2679293751716614,
+      "box": [
+        0.1728951781988144,
+        0.0,
+        1972.675048828125,
+        1312.0
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 1,
+      "class_name": "Baterai AA",
+      "confidence": 0.885067880153656,
+      "box": [
+        172.9364471435547,
+        477.393310546875,
+        658.020751953125,
+        646.3804321289062
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 0,
+      "class_name": "Baterai 9v",
+      "confidence": 0.8175065517425537,
+      "box": [
+        351.9599609375,
+        159.8103790283203,
+        653.7166748046875,
+        494.75811767578125
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.7754086256027222,
+      "box": [
+        633.5151977539062,
+        351.7461853027344,
+        798.744140625,
+        756.900390625
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 0,
+      "class_name": "Baterai 9v",
+      "confidence": 0.7445034980773926,
+      "box": [
+        1019.5282592773438,
+        728.125244140625,
+        1309.6549072265625,
+        1199.926025390625
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 0,
+      "class_name": "Baterai 9v",
+      "confidence": 0.7314284443855286,
+      "box": [
+        792.5315551757812,
+        142.56292724609375,
+        1251.16357421875,
+        345.7242431640625
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 1,
+      "class_name": "Baterai AA",
+      "confidence": 0.5956498980522156,
+      "box": [
+        800.4254760742188,
+        142.0863800048828,
+        1245.2392578125,
+        344.388916015625
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 0,
+      "class_name": "Baterai 9v",
+      "confidence": 0.5714854598045349,
+      "box": [
+        1737.7955322265625,
+        824.0298461914062,
+        1979.590576171875,
+        984.6439208984375
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 1,
+      "class_name": "Baterai AA",
+      "confidence": 0.5174005031585693,
+      "box": [
+        1185.9766845703125,
+        356.18438720703125,
+        1425.2366943359375,
+        824.8225708007812
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 0,
+      "class_name": "Baterai 9v",
+      "confidence": 0.5026572942733765,
+      "box": [
+        421.93975830078125,
+        69.72773742675781,
+        753.1439819335938,
+        444.9360046386719
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 1,
+      "class_name": "Baterai AA",
+      "confidence": 0.4594115614891052,
+      "box": [
+        610.2855224609375,
+        733.7091064453125,
+        812.0530395507812,
+        1110.2535400390625
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 0,
+      "class_name": "Baterai 9v",
+      "confidence": 0.3655954897403717,
+      "box": [
+        307.2372741699219,
+        520.9588012695312,
+        525.358154296875,
+        1048.9156494140625
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.3078974783420563,
+      "box": [
+        608.8919067382812,
+        728.6939697265625,
+        815.5732421875,
+        1114.22705078125
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 1,
+      "class_name": "Baterai AA",
+      "confidence": 0.2890208959579468,
+      "box": [
+        308.2009582519531,
+        529.0834350585938,
+        521.9384155273438,
+        1045.6558837890625
+      ]
+    }
+  ],
+  "summary": {
+    "waste_detections": 2,
+    "medical_waste_detections": 0,
+    "battery_detections": 13
+  },
+  "ai_analysis": {
+    "success": true,
+    "analysis": " 1. Environmental Impact Analysis:\n   Analyzing the given waste management data, it seems to include household waste and industrial waste. Here's a general environmental impact analysis:\n\n   - Plastics, Paper, and Glass: These materials contribute significantly to landfill waste. They take a long time to decompose, causing environmental pollution and harm to wildlife. When incinerated, they contribute to air pollution.\n\n   - Organic Waste: Large amounts of organic waste indicate potential methane emission in landfills, which is a potent greenhouse gas contributing to climate change.\n\n   - Waste Electrical and Electronic Equipment (WEEE): Contains hazardous materials like lead, mercury, and cadmium that can leach into the soil and water bodies, causing pollution.\n\n   - Hazardous Waste: The high volume of hazardous waste indicates potential health risks and environmental contamination if not properly managed.\n\n2. Proper Disposal Recommendations:\n   - Plastics, Paper, and Glass: Recycling is the best option for these materials. Ensure they are delivered to a proper recycle plant.\n   - Organic Waste: Composting or anaerobic digestion can be considered for organic waste to reduce methane emissions and produce fertilizers or biogas.\n   - Waste Electrical and Electronic Equipment (WEEE): Proper e-waste recycling is crucial. Usually, these items should not be disposed of in normal trash but taken to designated e-waste collection centers.\n   - Hazardous Waste: Proper storage, transportation, and disposal at authorized hazardous waste facilities is essential to prevent environmental contamination.\n\n3. Safety Precautions:\n   - Always use personal protective equipment (PPE) when handling waste, particularly hazardous waste.\n   - Ensure proper ventilation when handling waste, especially when burning waste or working in areas where hazardous substances may be present.\n   - Follow local regulations and guidelines for waste disposal to minimize risks to public health and the environment.\n   - Use designated containers for each type of waste to prevent cross-contamination.\n\n4. Recycling Guidelines:\n   - Plastics: Different types of plastics require separate recycling. Look for the resin identification code (1-7) on plastic items.\n   - Paper: All types of paper are generally recyclable, but来 relabeling' industrial paper may require special processing.\n   - Glass: Most types of glass, such as glass bottles and jars, can be recycled. However, cookware, light bulbs, and certain types of glass may not be accepted by recycling plants.\n   - Organic Waste: Compostable organic waste should be separated and placed in a compostable container.\n   - WEEE: These items should be taken to designated e-waste collection centers for proper recycling. Some cities or regions may offer free drop-off points or pick-up services.\n   - Hazardous Waste: This waste should be stored securely and only taken to authorized hazardous waste facilities for disposal.",
+    "wm_data": []
+  }
+}

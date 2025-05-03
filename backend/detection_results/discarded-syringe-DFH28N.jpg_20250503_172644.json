@@ -1,0 +1,124 @@
+{
+  "timestamp": "2025-05-03T17:26:44.642496",
+  "image_name": "discarded-syringe-DFH28N.jpg",
+  "detections": [
+    {
+      "model": "waste",
+      "class": 2,
+      "class_name": "cardboard",
+      "confidence": 0.918349027633667,
+      "box": [
+        473.96368408203125,
+        130.36453247070312,
+        1300.0,
+        844.7140502929688
+      ]
+    },
+    {
+      "model": "waste",
+      "class": 2,
+      "class_name": "cardboard",
+      "confidence": 0.8276163935661316,
+      "box": [
+        167.04176330566406,
+        97.91027069091797,
+        1283.3817138671875,
+        836.3013916015625
+      ]
+    },
+    {
+      "model": "waste",
+      "class": 2,
+      "class_name": "cardboard",
+      "confidence": 0.7055039405822754,
+      "box": [
+        290.24365234375,
+        204.81643676757812,
+        1300.0,
+        891.5447387695312
+      ]
+    },
+    {
+      "model": "waste",
+      "class": 2,
+      "class_name": "cardboard",
+      "confidence": 0.5188133120536804,
+      "box": [
+        635.4016723632812,
+        264.44085693359375,
+        1300.0,
+        881.83056640625
+      ]
+    },
+    {
+      "model": "waste",
+      "class": 2,
+      "class_name": "cardboard",
+      "confidence": 0.4804503917694092,
+      "box": [
+        618.9695434570312,
+        44.72649002075195,
+        1300.0,
+        950.2254028320312
+      ]
+    },
+    {
+      "model": "waste",
+      "class": 2,
+      "class_name": "cardboard",
+      "confidence": 0.45830538868904114,
+      "box": [
+        22.182857513427734,
+        0.0,
+        1237.67919921875,
+        907.69580078125
+      ]
+    },
+    {
+      "model": "medwaste",
+      "class": 0,
+      "class_name": "biohazard",
+      "confidence": 0.901416003704071,
+      "box": [
+        383.3764953613281,
+        207.5086669921875,
+        1083.9710693359375,
+        654.2353515625
+      ]
+    },
+    {
+      "model": "medwaste",
+      "class": 0,
+      "class_name": "biohazard",
+      "confidence": 0.7259916663169861,
+      "box": [
+        460.52386474609375,
+        466.9204406738281,
+        729.4390869140625,
+        643.2159423828125
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 0,
+      "class_name": "Baterai 9v",
+      "confidence": 0.31219857931137085,
+      "box": [
+        873.198486328125,
+        482.2249450683594,
+        1074.895751953125,
+        618.505615234375
+      ]
+    }
+  ],
+  "summary": {
+    "waste_detections": 6,
+    "medical_waste_detections": 2,
+    "battery_detections": 1
+  },
+  "ai_analysis": {
+    "success": true,
+    "analysis": " 1. Environmental Impact Analysis:\n   From the provided data, it appears that the waste management facility is handling a variety of waste types, including municipal solid waste (MSW), construction and demolition waste (CDW), and potentially hazardous waste (PHW).\n\n   - MSW: This type of waste, which includes household waste, can potentially contribute to pollution if not managed properly. It's important to consider the amount of organic waste and the methods used for disposal, as organic waste can decompose anaerobically in landfills, producing methane, a potent greenhouse gas.\n\n   - CDW: Construction and demolition waste can pose significant environmental risks if not properly managed. It's crucial to ensure that any materials that can be reused or recycled are separated and handled appropriately to minimize the environmental impact.\n\n   - PHW: Proper handling of potentially hazardous waste is essential to prevent contamination of soil, groundwater, and air. It's crucial to follow strict regulations and safety protocols for handling and disposal.\n\n2. Proper Disposal Recommendations:\n   - MSW: For MSW, landfilling is the most common method of disposal. However, it's essential to consider methods that can reduce the environmental impact, such as energy recovery from waste (ERW) or anaerobic digestion (AD).\n   - CDW: Recycling and reuse are the preferred methods for CDW. This can help conserve natural resources and reduce the amount of waste sent to landfill. The waste should be sorted and processed to extract materials that can be reused, such as wood, metals, and concrete.\n   - PHW: Proper disposal of PHW involves treating and disposing of waste in approved facilities that abide by environmental regulations. It may be necessary to incinerate some types of hazardous waste under controlled conditions.\n\n3. Safety Precautions:\n   - All waste management workers should use personal protective equipment (PPE) such as gloves, safety glasses, and protective clothing to prevent exposure to hazardous substances.\n   - Proper training should be provided to workers on handling different types of waste and the safety protocols associated with each.\n   - Adequate ventilation systems should be in place to prevent the accumulation of harmful gases, and spill response procedures should be in place in case of accidents.\n\n4. Recycling Guidelines:\n   - Recycling programs should be established for MSW to reduce the amount of waste sent to landfills. Common recyclable materials include paper, plastics, glass, and metals.\n   - For CDW, recycling programs should be established for materials such as wood, metals, and concrete. These materials can often be reused in new construction projects.\n   - For PHW, it may be challenging to recycle some materials, but certain hazardous substances can be treated and reused, such as lead, mercury, and fluorescent lamps. It's essential to follow strict regulations and safety protocols for handling these materials.\n   - Implementing a waste separation system for both MSW and CDW can help to maximize recycling rates and reduce the amount of waste sent to landfill.",
+    "wm_data": []
+  }
+}

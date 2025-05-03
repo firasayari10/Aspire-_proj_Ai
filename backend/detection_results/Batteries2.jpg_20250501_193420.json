@@ -1,0 +1,227 @@
+{
+  "timestamp": "2025-05-01T19:34:20.389896",
+  "image_name": "Batteries2.jpg",
+  "detections": [
+    {
+      "model": "waste",
+      "class": 0,
+      "class_name": "glass",
+      "confidence": 0.3491085171699524,
+      "box": [
+        1416.624755859375,
+        0.0,
+        1980.0,
+        1207.9129638671875
+      ]
+    },
+    {
+      "model": "waste",
+      "class": 0,
+      "class_name": "glass",
+      "confidence": 0.2679293751716614,
+      "box": [
+        0.1728951781988144,
+        0.0,
+        1972.675048828125,
+        1312.0
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 1,
+      "class_name": "Baterai AA",
+      "confidence": 0.885067880153656,
+      "box": [
+        172.9364471435547,
+        477.393310546875,
+        658.020751953125,
+        646.3804321289062
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 0,
+      "class_name": "Baterai 9v",
+      "confidence": 0.8175065517425537,
+      "box": [
+        351.9599609375,
+        159.8103790283203,
+        653.7166748046875,
+        494.75811767578125
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.7754086256027222,
+      "box": [
+        633.5151977539062,
+        351.7461853027344,
+        798.744140625,
+        756.900390625
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 0,
+      "class_name": "Baterai 9v",
+      "confidence": 0.7445034980773926,
+      "box": [
+        1019.5282592773438,
+        728.125244140625,
+        1309.6549072265625,
+        1199.926025390625
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 0,
+      "class_name": "Baterai 9v",
+      "confidence": 0.7314284443855286,
+      "box": [
+        792.5315551757812,
+        142.56292724609375,
+        1251.16357421875,
+        345.7242431640625
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 1,
+      "class_name": "Baterai AA",
+      "confidence": 0.5956498980522156,
+      "box": [
+        800.4254760742188,
+        142.0863800048828,
+        1245.2392578125,
+        344.388916015625
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 0,
+      "class_name": "Baterai 9v",
+      "confidence": 0.5714854598045349,
+      "box": [
+        1737.7955322265625,
+        824.0298461914062,
+        1979.590576171875,
+        984.6439208984375
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 1,
+      "class_name": "Baterai AA",
+      "confidence": 0.5174005031585693,
+      "box": [
+        1185.9766845703125,
+        356.18438720703125,
+        1425.2366943359375,
+        824.8225708007812
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 0,
+      "class_name": "Baterai 9v",
+      "confidence": 0.5026572942733765,
+      "box": [
+        421.93975830078125,
+        69.72773742675781,
+        753.1439819335938,
+        444.9360046386719
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 1,
+      "class_name": "Baterai AA",
+      "confidence": 0.4594115614891052,
+      "box": [
+        610.2855224609375,
+        733.7091064453125,
+        812.0530395507812,
+        1110.2535400390625
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 0,
+      "class_name": "Baterai 9v",
+      "confidence": 0.3655954897403717,
+      "box": [
+        307.2372741699219,
+        520.9588012695312,
+        525.358154296875,
+        1048.9156494140625
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.3078974783420563,
+      "box": [
+        608.8919067382812,
+        728.6939697265625,
+        815.5732421875,
+        1114.22705078125
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 1,
+      "class_name": "Baterai AA",
+      "confidence": 0.2890208959579468,
+      "box": [
+        308.2009582519531,
+        529.0834350585938,
+        521.9384155273438,
+        1045.6558837890625
+      ]
+    }
+  ],
+  "summary": {
+    "waste_detections": 2,
+    "medical_waste_detections": 0,
+    "battery_detections": 13
+  },
+  "ai_analysis": {
+    "success": true,
+    "analysis": " Based on the detected waste items and the historical analysis, here are the recommendations:\n\n1. Proper disposal recommendations:\n   - Batteries (AA, 9V, and drycell): These detected items are batteries, which can be harmful to the environment if not disposed of properly. Take batteries to a household hazardous waste collection event or recycling center.\n   - Glass: The waste data shows a significant amount of glass being detected. Recycle glass items at a local recycling facility. In the U.S., most glass (such as bottles and jars) can often be recycled through curbside recycling programs.\n   - Organic Waste: It is essential to compost organic waste or deliver it to municipal composting or anaerobic digestion facilities.\n   - Plastic Waste: Properly segregate and recycle plastic waste to prevent pollution and conserve resources. Be aware that not all plastics can be recycled in the same way, and it's essential to follow your local recycling programs guidelines.\n   - Hazardous Waste: Dispose of hazardous waste, such as electronics or batteries, at designated hazardous waste facilities to prevent environmental contamination.\n\n2. Safety precautions:\n   - Personal Protective Equipment: When handling waste, especially hazardous waste, use protective equipment like gloves and masks to protect yourself.\n   - Training: Workers should be trained on safe handling, transportation, and disposal of waste.\n   - Proper Storage: Store waste containers in a dry, secure area to prevent spills and leaks.\n\n3. Recycling guidelines:\n   - Plastic: Recycle plastic items based on their resin identification code (i.e., PET, HDPE, PVC, etc.).\n   - Paper/Cardboard: Flatten boxes and remove any food waste before recycling.\n   - Glass: Recycle glass bottles and jars by sorting them by color (clear, green, or brown).\n   - Metals: Recycle aluminum cans, tin cans, and other metals.\n   - Electronics: Old electronics should be disposed of at designated e-waste facilities.\n   - Batteries: Rechargeable batteries can be reused, and single-use batteries should be disposed of at battery recycling facilities.\n   - Hazardous Materials: Properly dispose of household hazardous waste (paint, cleaning supplies, etc.) at designated facilities.\n   - Organic Waste: Compost organic waste at home or use composting services, or deliver it to municipal composting or anaerobic digestion facilities.\n\nTo optimize waste management, it's essential to implement effective recycling programs, reduce waste at the source, and properly dispose of non-recyclable waste to minimize environmental impacts. Monitor waste management activities regularly to evaluate the effectiveness of waste management strategies and to continuously improve them.",
+    "wm_data": [],
+    "previous_analyses": [
+      {
+        "timestamp": "2025-05-01T19:06:37.142795",
+        "analysis": " 1. Environmental Impact Analysis:\n   From the provided data, it appears that a significant amount of waste (250 metric tons) is generated daily, primarily composed of plastic and organic waste. This high volume of waste can have several environmental impacts:\n\n   - Landfill: The landfill volume will increase due to the high waste generation, potentially leading to urban expansion and loss of natural habitats.\n   - Greenhouse Gas Emissions: Decomposition of organic waste in a landfill produces methane, a potent greenhouse gas that contributes to climate change.\n   - Plastic Pollution: The high plastic content in the waste can lead to plastic pollution if not managed properly, endangering marine and wildlife.\n   - Resource Waste: Recyclable materials (finite resources) are being sent to landfill, increasing the demand for new raw materials, which is not sustainable.\n\n2. Proper Disposal Recommendations:\n   - Organic Waste: Composting or Anaerobic Digestion: Organic waste can be converted into nutrient-rich soil through composting or converted into biogas through anaerobic digestion, reducing landfill volume and producing a useful resource.\n   - Plastic Waste: Proper segregation and recycling of plastic waste can significantly reduce plastic pollution and conserve resources.\n   - Hazardous Waste: Any hazardous waste, such as electronics or batteries, should be disposed of at designated hazardous waste facilities to prevent environmental contamination.\n\n3. Safety Precautions:\n   - Personal Protective Equipment: Workers should wear appropriate protective clothing, gloves, and masks to protect against harmful substances when handling waste.\n   - Training: Workers should be trained on safe handling, transportation, and disposal of waste to prevent accidents and exposure to hazardous materials.\n   - Proper Storage: Waste containers should be sealed and stored in a dry, secure area to prevent spills and leaks.\n\n4. Recycling Guidelines:\n   - Plastic: Recyclable plastics should be segregated based on the resin identification code (i.e., PET, HDPE, PVC, etc.).\n   - Paper/Cardboard: Flatten boxes and remove any food waste before recycling.\n   - Glass: Glass bottles and jars should be rinsed and sorted by color (clear, green, or brown) for recycling.\n   - Metals: Aluminum cans, tin cans, and other metals can be recycled.\n   - Electronics: Old electronics should be disposed of at designated e-waste facilities.\n   - Batteries: Rechargeable batteries can be reused, and single-use batteries should be disposed of at battery recycling facilities.\n   - Hazardous Materials: Properly dispose of household hazardous waste (paint, cleaning supplies, etc.) at designated facilities.\n   - Organic Waste: Compost organic waste at home or use composting services, or Deliver organic waste to municipal composting or anaerobic digestion facilities.\n\nTo optimize waste management, it's essential to implement effective recycling programs, reduce waste at the source, and properly dispose of non-recyclable waste to minimize environmental impacts. Monitoring of waste composition and waste management activities should be conducted regularly to evaluate the effectiveness of the waste management strategies and to continuously improve them."
+      },
+      {
+        "timestamp": "2025-05-01T19:10:45.936649",
+        "analysis": " 1. Environmental Impact Analysis:\n   The waste management data provides insights into the type and quantity of waste generated. The predominant waste is household waste which contributes to 60% of the total waste. Organic waste accounts for 35% of the total waste, while plastic waste makes up 10%.\n\n   - Household waste commonly contains a mix of recyclables, non-recyclables, organic waste, and hazardous items. Landfilling this waste can have negative environmental impacts due to the release of methane and other greenhouse gases, as well as leaching of harmful substances into the soil and groundwater.\n   - Organic waste decomposing in landfills produces methane, a potent greenhouse gas that contributes to climate change. Furthermore, organic waste can be a valuable resource for composting and generating biogas.\n   - Plastic waste, particularly if it ends up in the environment, poses a significant threat to wildlife and ecosystems. It takes hundreds of years to decompose, and during that time, it can break down into microplastics that find their way into our food chain.\n\n2. Proper Disposal Recommendations:\n   - Household waste: Sort your waste into appropriate categories (recyclables, organic waste, non-recyclables, hazardous waste) and dispose of them in the designated bins. Consider composting organic waste in your backyard or use municipal composting facilities if available.\n   - Organic waste: Prioritize composting over landfilling to reduce methane emissions and create valuable compost for gardening.\n   - Plastic waste: Choose to reuse, reduce, and recycle plastic items whenever possible. Avoid single-use plastics.\n\n3. Safety Precautions:\n   - Handle all types of waste carefully to avoid exposure to harmful substances. Wear gloves and protective clothing when handling waste, especially hazardous waste.\n   - Ensure that waste disposal facilities follow safety standards to prevent accidents and pollution.\n   - Be aware of any hazardous waste disposal laws in your area and follow them to protect public health and the environment.\n\n4. Recycling Guidelines:\n   - Follow the 3Rs: Reduce, Reuse, Recycle. This means reducing the amount of waste you produce, reusing items whenever possible, and recycling what is left.\n   - Know your local recycling program to ensure that you are recycling items correctly. Not all materials can be recycled in the same way, and some materials should not be recycled at all due to contamination risks.\n   - Rinse and clean recyclables before putting them in the recycling bin to prevent contamination.\n   - Ensure that recyclables are dry before recycling to prevent mold growth and contamination.\n   - Be mindful of the packaging you choose. Opt for products with less packaging or recyclable packaging materials.\n   - Support businesses that use recycled materials in their products. This creates a market demand for recycled materials and incentivizes recycling efforts.\n\nIn conclusion, proper waste management is essential for protecting the environment, public health, and resources. By adopting the 3Rs, using proper disposal methods, following safety precautions, and recycling responsibly, we can significantly reduce the negative environmental impacts of waste."
+      },
+      {
+        "timestamp": "2025-05-01T19:23:47.494167",
+        "analysis": " Based on the provided waste management data and historical analysis, here are the recommendations:\n\n1. Environmental impact analysis:\n   From the current detected items, a high concentration of batteries, specifically AA and 9V batteries, is evident. The presence of batteries can pose a significant environmental hazard since they contain harmful substances that can leach into the groundwater if discarded improperly. Glass, while less harmful, can still contribute to landfill volume if not recycled. The waste data also indicates ongoing issues with organic and plastic waste, as observed in the previous analyses. Daily waste generation is roughly 250 metric tons, much of which ends up in landfills, resulting in increased urban expansion, greenhouse gas emissions, plastic pollution, and resource waste.\n\n2. Proper disposal recommendations:\n    - Batteries: Store batteries in a dry place away from children and pets until they can be taken to a household hazardous waste collection event or recycling center.\n    - Glass: Recycle glass in facilities that exist. In the U.S., most glass (such as jars and bottles) can be recycled in curbside recycling programs.\n    - Organic Waste: Compost organic waste or deliver it to municipal composting or anaerobic digestion facilities.\n    - Plastic Waste: Properly segregate and recycle plastic waste to reduce plastic pollution and conserve resources.\n    - Hazardous Waste: Properly dispose of hazardous waste at designated facilities such as electronics and batteries.\n\n3. Safety precautions:\n   - Personal Protective Equipment: Use protective equipment like gloves and masks when handling waste, especially hazardous waste.\n   - Training: Workers should be trained on safe handling, transportation, and disposal of waste.\n   - Proper Storage: Ensure waste containers are sealed and stored in a dry, secure area to prevent spills and leaks.\n\n4. Recycling guidelines:\n   - Plastic: Recycle plastic items based on their resin identification code.\n   - Paper/Cardboard: Flatten boxes and remove food waste before recycling.\n   - Glass: Recycle glass items by sorting them by color (clear, green, or brown).\n   - Metals: Recycle aluminum cans, tin cans, and other metals.\n   - Electronics: Properly dispose of old electronics at e-waste facilities.\n   - Batteries: Rechargeable batteries can be reused, while single-use batteries should be recycled at battery recycling facilities.\n   - Hazardous Materials: Properly dispose of household hazardous waste at designated facilities.\n   - Organic Waste: Compost organic waste at home or use composting services, or deliver it to municipal composting or anaerobic digestion facilities.\n\n5. Comparison with previous analyses:\n   Although the volume of waste has remained constant, the composition of waste seems to consist primarily of batteries and glass, which is different from the organic and plastic waste mentioned in previous analyses. The high concentration of batteries in this analysis highlights the need to focus on battery management and recycling efforts. Recycling programs for batteries and other hazardous waste should be improved to reduce environmental impacts."
+      }
+    ],
+    "detections_with_details": [
+      "- glass (model: waste, confidence: 0.35, location: [1416.624755859375, 0.0, 1980.0, 1207.9129638671875])",
+      "- glass (model: waste, confidence: 0.27, location: [0.1728951781988144, 0.0, 1972.675048828125, 1312.0])",
+      "- Baterai AA (model: ewaste, confidence: 0.89, location: [172.9364471435547, 477.393310546875, 658.020751953125, 646.3804321289062])",
+      "- Baterai 9v (model: ewaste, confidence: 0.82, location: [351.9599609375, 159.8103790283203, 653.7166748046875, 494.75811767578125])",
+      "- drycell (model: ewaste, confidence: 0.78, location: [633.5151977539062, 351.7461853027344, 798.744140625, 756.900390625])",
+      "- Baterai 9v (model: ewaste, confidence: 0.74, location: [1019.5282592773438, 728.125244140625, 1309.6549072265625, 1199.926025390625])",
+      "- Baterai 9v (model: ewaste, confidence: 0.73, location: [792.5315551757812, 142.56292724609375, 1251.16357421875, 345.7242431640625])",
+      "- Baterai AA (model: ewaste, confidence: 0.60, location: [800.4254760742188, 142.0863800048828, 1245.2392578125, 344.388916015625])",
+      "- Baterai 9v (model: ewaste, confidence: 0.57, location: [1737.7955322265625, 824.0298461914062, 1979.590576171875, 984.6439208984375])",
+      "- Baterai AA (model: ewaste, confidence: 0.52, location: [1185.9766845703125, 356.18438720703125, 1425.2366943359375, 824.8225708007812])",
+      "- Baterai 9v (model: ewaste, confidence: 0.50, location: [421.93975830078125, 69.72773742675781, 753.1439819335938, 444.9360046386719])",
+      "- Baterai AA (model: ewaste, confidence: 0.46, location: [610.2855224609375, 733.7091064453125, 812.0530395507812, 1110.2535400390625])",
+      "- Baterai 9v (model: ewaste, confidence: 0.37, location: [307.2372741699219, 520.9588012695312, 525.358154296875, 1048.9156494140625])",
+      "- drycell (model: ewaste, confidence: 0.31, location: [608.8919067382812, 728.6939697265625, 815.5732421875, 1114.22705078125])",
+      "- Baterai AA (model: ewaste, confidence: 0.29, location: [308.2009582519531, 529.0834350585938, 521.9384155273438, 1045.6558837890625])"
+    ]
+  }
+}
