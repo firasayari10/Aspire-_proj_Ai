@@ -1,0 +1,141 @@
+{
+  "timestamp": "2025-05-04T23:49:09.000392",
+  "image_name": "Image_7.png",
+  "detections": [
+    {
+      "model": "waste",
+      "class": 0,
+      "class_name": "glass",
+      "confidence": 0.5026046633720398,
+      "box": [
+        0.132598876953125,
+        58.544517517089844,
+        256.0,
+        250.94650268554688
+      ]
+    },
+    {
+      "model": "medwaste",
+      "class": 0,
+      "class_name": "biohazard",
+      "confidence": 0.4036920666694641,
+      "box": [
+        59.5609016418457,
+        85.46640014648438,
+        112.3595199584961,
+        204.36996459960938
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 4,
+      "class_name": "battery",
+      "confidence": 0.7560982704162598,
+      "box": [
+        111.2145767211914,
+        118.6007308959961,
+        140.76193237304688,
+        205.967529296875
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 4,
+      "class_name": "battery",
+      "confidence": 0.6435694098472595,
+      "box": [
+        146.3141326904297,
+        136.94992065429688,
+        166.4021759033203,
+        204.8282470703125
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 4,
+      "class_name": "battery",
+      "confidence": 0.47816896438598633,
+      "box": [
+        25.229860305786133,
+        137.4704132080078,
+        49.791908264160156,
+        204.212646484375
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 4,
+      "class_name": "battery",
+      "confidence": 0.4242188632488251,
+      "box": [
+        85.49713134765625,
+        115.21482849121094,
+        109.47515869140625,
+        203.55963134765625
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 4,
+      "class_name": "battery",
+      "confidence": 0.41617828607559204,
+      "box": [
+        113.144287109375,
+        117.5580062866211,
+        131.6249542236328,
+        204.5335235595703
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.325522243976593,
+      "box": [
+        146.7433624267578,
+        89.15999603271484,
+        164.63290405273438,
+        146.77252197265625
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.3133153021335602,
+      "box": [
+        223.8319854736328,
+        144.69204711914062,
+        245.04067993164062,
+        206.67807006835938
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.3041604161262512,
+      "box": [
+        0.2426505982875824,
+        139.238525390625,
+        25.716846466064453,
+        208.08517456054688
+      ]
+    }
+  ],
+  "summary": {
+    "waste_detections": 1,
+    "medical_waste_detections": 1,
+    "battery_detections": 8
+  },
+  "ai_analysis": {
+    "success": true,
+    "analysis": " Environmental Impact Analysis:\n1. Glass: When not properly disposed of, glass waste can contribute to pollution in landfills, as it does not biodegrade easily. It can also pose a hazard to wildlife and humans if it fragments and is ingested.\n2. Biohazard: Improper disposal of biohazardous waste can lead to serious health risks, as it can contain pathogens that cause diseases. It can also contaminate soil and groundwater, disrupting the ecosystem and posing a threat to human health.\n3. Drycell: Improper disposal of dry cells can lead to pollution due to heavy metals contained in them, such as mercury, lead, and cadmium. These heavy metals can be harmful to the environment and human health.\n4. Battery: improper disposal of batteries can lead to heavy metal pollution, as they too contain heavy metals such as lead, mercury, and cadmium. They can also cause environmental damage if they leak, releasing corrosive chemicals.\n\nProper Disposal Recommendations:\n1. Glass: Recycle glass waste at a designated recycling center. Place it in the appropriate bin (e.g., colors separated), and try to rinse and dry the glass before recycling to prevent contamination.\n2. Biohazard: Dispose of biohazardous waste at a designated biohazard disposal facility. Make sure to follow local regulations and use appropriate personal protective equipment (PPE) such as gloves, masks, and protective clothing when handling biohazardous waste.\n3. Drycell: Dispose of dry cells in a designated household hazardous waste collection. Dispose of alkaline cells in the regular trash after checking if your community has a battery recycling program. For rechargeable batteries, check if they can be reused or recycled.\n4. Battery: Dispose of batteries at a designated household hazardous waste collection. Check if your community has a battery recycling program, as many batteries can be recycled and processed to recover valuable metals.\n\nSafety Precautions:\n1. Wear appropriate PPE when handling biohazardous and dry cell waste to prevent direct contact with the waste material.\n2. If possible, use tongs or other tools to handle hazardous waste to minimize direct contact.\n3. Always wash hands thoroughly after handling any waste material.\n4. If you are uncertain about the proper disposal of a specific waste material, contact local waste management authorities or do further research.\n\nRecycling Guidelines:\n1. Check with your city or county's waste management authority to determine the appropriate recycling facilities for your area.\n2. Rinse and dry recyclables before recycling to prevent contamination of other recyclables.\n3. Follow proper sorting instructions when recycling, as different materials may require specific recycling bins or collection centers.\n4. Be mindful of the recycling symbols on packaging and products to determine if they are recyclable in your area.\n5. Reduce, reuse, and recycle household waste to minimize environmental impact.",
+    "detected_waste_types": [
+      "glass",
+      "biohazard",
+      "drycell",
+      "battery"
+    ]
+  }
+}

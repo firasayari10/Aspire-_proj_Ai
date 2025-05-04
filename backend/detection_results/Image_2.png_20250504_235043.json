@@ -1,0 +1,30 @@
+{
+  "timestamp": "2025-05-04T23:50:43.367028",
+  "image_name": "Image_2.png",
+  "detections": [
+    {
+      "model": "waste",
+      "class": 0,
+      "class_name": "glass",
+      "confidence": 0.7278255820274353,
+      "box": [
+        97.01543426513672,
+        28.13570785522461,
+        205.32037353515625,
+        148.61599731445312
+      ]
+    }
+  ],
+  "summary": {
+    "waste_detections": 1,
+    "medical_waste_detections": 0,
+    "battery_detections": 0
+  },
+  "ai_analysis": {
+    "success": true,
+    "analysis": " Environmental Impact Analysis: Glass waste, being a non-biodegradable material, poses a significant environmental threat when not properly managed. When discarded improperly, it can contaminate soil and water sources, harming wildlife and impacting human health. If it ends up in the ocean, it can kill marine life and disrupt ecosystems. Additionally, the production of glass also requires high temperatures and due to this, it contributes to carbon emissions.\n\nProper Disposal Recommendations:\nIdeally, glass waste should be taken to a local recycling center that accepts glass. Some cities have curbside recycling programs that allow glass waste to be collected alongside other recyclables.\n\nSafty Precautions:\nIf you are handling glass waste, it's important to be careful to avoid cuts. Broken glass should be handled with caution and disposed of in a sturdy container to prevent injuries.\n\nRecycling Guidelines:\n1. Rinse: Rinse out all glass containers before recycling to prevent any contamination of the recycling machinery.\n2. Sort: Ensure the glass is sorted correctly with similar types of glass (e.g., green, brown, clear).\n3. No Ferrous Contamination: Do not mix any metal with your glass recycling as it can damage the machinery in the recycling facilities.\n4. Broken Pieces: If the glass is broken, try to place it in a sturdy container before recycling.\n5. Residential programs: If your city has a residential recycling program, follow their specific guidelines as they may have different requirements or restrictions.\n\nRecycling glass can help conserve natural resources by reducing the need for new raw materials like sand, soda ash, limestone, and cullet (crushed recycled glass), which are essential in making new glass. Glass can be recycled endlessly with no loss in quality, making it a valuable resource for the circular economy.",
+    "detected_waste_types": [
+      "glass"
+    ]
+  }
+}

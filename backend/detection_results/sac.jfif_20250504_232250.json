@@ -1,0 +1,28 @@
+{
+  "timestamp": "2025-05-04T23:22:50.896092",
+  "image_name": "sac.jfif",
+  "detections": [
+    {
+      "model": "efficientnet",
+      "prediction": "plastic_shopping_bags",
+      "confidence": 0.9998329877853394
+    }
+  ],
+  "summary": {
+    "waste_detections": 0,
+    "medical_waste_detections": 0,
+    "battery_detections": 0,
+    "efficientnet_classification": {
+      "model": "efficientnet",
+      "prediction": "plastic_shopping_bags",
+      "confidence": 0.9998329877853394
+    }
+  },
+  "ai_analysis": {
+    "success": true,
+    "analysis": "Based on the detected waste types (plastic_shopping_bags), here are some general recommendations:\n\n1. Environmental Impact:\n- Proper waste segregation is crucial for environmental protection\n- Different types of waste require different handling methods\n\n2. Disposal Recommendations:\n- Follow local waste management guidelines\n- Use designated collection points for each waste type\n\n3. Safety Precautions:\n- Wear appropriate protective equipment when handling waste\n- Keep waste containers properly sealed\n\n4. Recycling Guidelines:\n- Check local recycling facilities for accepted materials\n- Clean and sort recyclable materials before disposal",
+    "detected_waste_types": [
+      "plastic_shopping_bags"
+    ]
+  }
+}

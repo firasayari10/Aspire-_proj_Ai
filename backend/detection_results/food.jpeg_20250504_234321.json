@@ -1,0 +1,79 @@
+{
+  "timestamp": "2025-05-04T23:43:21.953540",
+  "image_name": "food.jpeg",
+  "detections": [
+    {
+      "model": "waste",
+      "class": 2,
+      "class_name": "cardboard",
+      "confidence": 0.7921376824378967,
+      "box": [
+        34.8521728515625,
+        0.0,
+        1959.8919677734375,
+        1093.524658203125
+      ]
+    },
+    {
+      "model": "waste",
+      "class": 2,
+      "class_name": "cardboard",
+      "confidence": 0.7181594967842102,
+      "box": [
+        17.548828125,
+        0.0,
+        2006.8936767578125,
+        1521.3095703125
+      ]
+    },
+    {
+      "model": "waste",
+      "class": 2,
+      "class_name": "cardboard",
+      "confidence": 0.6148200035095215,
+      "box": [
+        114.2672119140625,
+        0.0,
+        1924.7105712890625,
+        811.3173828125
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.6688919067382812,
+      "box": [
+        515.6638793945312,
+        760.0292358398438,
+        1445.3629150390625,
+        1534.76171875
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.5760617852210999,
+      "box": [
+        907.265625,
+        572.8263549804688,
+        1534.2847900390625,
+        1493.0689697265625
+      ]
+    }
+  ],
+  "summary": {
+    "waste_detections": 3,
+    "medical_waste_detections": 0,
+    "battery_detections": 2
+  },
+  "ai_analysis": {
+    "success": true,
+    "analysis": " Environmental Impact Analysis:\n\n1. Cardboard Waste: Cardboard is a biodegradable material, but when not properly managed, it can contribute to landfill accumulation and methane gas emissions. Moreover, the production of cardboard often involves deforestation, which leads to habitat loss for various species and increased carbon emissions.\n\n2. Dry Cell Waste (e.g., batteries): Dry cell waste poses a significant environmental risk due to the toxic heavy metals like lead, mercury, cadmium, and nickel they contain. improper disposal can lead to soil and water pollution, harming both flora, fauna, and human health.\n\nProper Disposal Recommendations:\n\n1. Cardboard Waste: Recommend composting biodegradable cardboard if it is not contaminated with food or liquids. Otherwise, it should be sent to a local waste-to-energy plant because the moisture content in contaminated cardboard is often too low to make composting effective.\n\n2. Dry Cell Waste: These should be sent to designated battery recycling facilities as they cannot be disposed of in regular trash due to the hazardous substances they contain. In some areas, there are even programs that accept dead batteries for recycling at local retail stores carrying batteries.\n\nSafety Precautions:\n\n1. Cardboard Waste: Handle cardboard waste carefully to avoid injury from sharp edges or nails if present. Make sure it is dry to prevent slipping accidents.\n\n2. Dry Cell Waste: Avoid physical contact with dry cell batteries to prevent exposure to potentially hazardous substances. Always wear gloves and eye protection when handling batteries.\n\nRecycling Guidelines:\n\n1. Cardboard Waste: Clean, dry, and shredded cardboard can be recycled at designated recycling facilities. Avoid contamination with food, liquids, or other waste materials that could hinder the recycling process.\n\n2. Dry Cell Waste: Only recyclable batteries (e.g., rechargeable Nickel Cadmium, Nickel Metal Hydride, Lithium ion, Small sealed lead acid) should be sent for recycling. Do not attempt to recycle common household alkaline batteries as they typically do not contain recyclable materials.\n\nBy following proper disposal, safety precautions, and recycling guidelines, you can ensure efficient waste management, reduce environmental impact, and promote a cleaner, healthier planet.",
+    "detected_waste_types": [
+      "cardboard",
+      "drycell"
+    ]
+  }
+}

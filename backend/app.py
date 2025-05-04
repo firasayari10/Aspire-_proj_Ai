@@ -4,7 +4,7 @@ import os
 import json
 from datetime import datetime
 import requests
-from PIL import Image
+from PIL import Image, ImageDraw
 import io
 import base64
 import numpy as np
@@ -26,11 +26,14 @@ app = Flask(__name__)
 CORS(app)
 
 # OpenRouter Configuration
-OPENROUTER_API_KEY = ""
+OPENROUTER_API_KEY = "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"
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 
+# WM API Configuration
+WM_API_URL = "https://apitest.wm.com/v1"
+
 # Mistral API Configuration
-openai.api_key = ""
+openai.api_key = "1QUMWhu2cSOcEupqAvsyuU0j37aCnOqb"
 openai.api_base = "https://api.mistral.ai/v1"
 
 # Model paths
@@ -71,10 +74,12 @@ sd_pipeline = None
 # ----------- Utility functions -----------
 
 def save_detection_results(image_name, detections):
+    """Save detection results to a JSON file and analyze with Mistral"""
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     filename = f"{image_name}_{timestamp}.json"
     filepath = os.path.join(RESULTS_DIR, filename)
-
+    
+    # Prepare results with additional metadata
     results = {
         "timestamp": datetime.now().isoformat(),
         "image_name": image_name,
@@ -82,31 +87,31 @@ def save_detection_results(image_name, detections):
         "summary": {
             "waste_detections": len([d for d in detections if d['model'] == 'waste']),
             "medical_waste_detections": len([d for d in detections if d['model'] == 'medwaste']),
-            "battery_detections": len([d for d in detections if d['model'] == 'ewaste']),
-            "efficientnet_classification": next((d for d in detections if d['model'] == 'efficientnet'), None)
+            "battery_detections": len([d for d in detections if d['model'] == 'ewaste'])
         }
     }
-
+    
+    # Save to JSON file
     with open(filepath, 'w', encoding='utf-8') as f:
         json.dump(results, f, indent=2, ensure_ascii=False)
-
+    
+    # Get analysis from Mistral-7B
     analysis_result = analyze_with_mistral(results)
+    
+    # Add analysis to results and save updated JSON
     results["ai_analysis"] = analysis_result
-
     with open(filepath, 'w', encoding='utf-8') as f:
         json.dump(results, f, indent=2, ensure_ascii=False)
-
+    
     return filename, analysis_result
 
 def analyze_with_mistral(results):
+    """Analyze detection results using Mistral-7B through OpenRouter"""
     detection_summary = []
     waste_types = set()
 
     for det in results["detections"]:
-        if 'class_name' in det:
-            waste_types.add(det['class_name'].lower())
-        elif det['model'] == 'efficientnet':
-            waste_types.add(det['prediction'])
+        waste_types.add(det['class_name'].lower())
 
     for waste_type in waste_types:
         detection_summary.append(f"- Detected waste type: {waste_type}")
@@ -132,7 +137,12 @@ Recycling guidelines
 
         data = {
             "model": "mistralai/mistral-7b-instruct",
-            "messages": [{"role": "user", "content": prompt}]
+            "messages": [
+                {
+                    "role": "user",
+                    "content": prompt
+                }
+            ]
         }
 
         response = requests.post(OPENROUTER_URL, headers=headers, json=data)
@@ -146,7 +156,10 @@ Recycling guidelines
 
     except Exception as e:
         print(f"Error calling Mistral-7B: {str(e)}")
-        return {"success": False, "error": str(e)}
+        return {
+            "success": False,
+            "error": str(e)
+        }
 
 def load_models():
     """Load all required models"""
@@ -154,18 +167,18 @@ def load_models():
     try:
         # Get the absolute path to the root of the project
         project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-        
+
         # Load YOLO models
         WASTE_MODEL_PATH = os.path.join(project_root, 'models', 'best.pt')
         MEDWASTE_MODEL_PATH = os.path.join(project_root, 'models', 'medwaste.pt')
         EWASTE_MODEL_PATH = os.path.join(project_root, 'models', 'batteeries.pt')
         CLASSIFICATION_MODEL_PATH = os.path.join(project_root, 'models', 'efficient1.h5')
-        
+
         waste_model = YOLO(WASTE_MODEL_PATH)
         medwaste_model = YOLO(MEDWASTE_MODEL_PATH)
         ewaste_model = YOLO(EWASTE_MODEL_PATH)
         classification_model = load_classification_model(CLASSIFICATION_MODEL_PATH)
-        
+
         return True
     except Exception as e:
         print(f"Error loading models: {str(e)}")
@@ -326,80 +339,234 @@ def health_check():
 
 @app.route('/api/process-image', methods=['POST'])
 def process_image():
-    if not all([waste_model, medwaste_model, ewaste_model, efficientnet_model, classification_model]):
-        return jsonify({'success': False, 'error': 'Models not loaded'}), 500
+    if waste_model is None or medwaste_model is None or ewaste_model is None:
+        return jsonify({
+            'success': False,
+            'error': 'Models not loaded. Please check server logs.'
+        }), 500
 
     try:
-        if 'image' not in request.files:
-            return jsonify({'success': False, 'error': 'No image file provided'}), 400
+        # Check if image is in files or in request data
+        if 'image' in request.files:
+            file = request.files['image']
+        elif 'file' in request.files:
+            file = request.files['file']
+        else:
+            return jsonify({
+                'success': False,
+                'error': 'No image file provided'
+            }), 400
 
-        file = request.files['image']
+        if not file or file.filename == '':
+            return jsonify({
+                'success': False,
+                'error': 'No selected file'
+            }), 400
+
         image_name = file.filename
-        image_bytes = file.read()
-        image = Image.open(io.BytesIO(image_bytes)).convert("RGB")
+        
+        # Validate file type
+        allowed_extensions = {'png', 'jpg', 'jpeg', 'gif', 'webp'}
+        if '.' not in image_name or image_name.rsplit('.', 1)[1].lower() not in allowed_extensions:
+            return jsonify({
+                'success': False,
+                'error': 'Invalid file type. Please upload an image file (PNG, JPG, JPEG, GIF, or WEBP)'
+            }), 400
 
-        waste_result = waste_model(image)[0]
-        medwaste_result = medwaste_model(image)[0]
-        ewaste_result = ewaste_model(image, conf=0.25)[0]
+        # Read and validate image
+        try:
+            image_bytes = file.read()
+            image = Image.open(io.BytesIO(image_bytes))
+            # Convert to RGB if necessary
+            if image.mode != 'RGB':
+                image = image.convert('RGB')
+        except Exception as e:
+            print(f"Error reading image: {str(e)}")
+            return jsonify({
+                'success': False,
+                'error': 'Invalid image file. Please upload a valid image.'
+            }), 400
+        
+        # Run detections
+        try:
+            print("Running waste detection...")
+            waste_results = waste_model(image)
+            print("Running medical waste detection...")
+            medwaste_results = medwaste_model(image)
+            print("Running e-waste detection...")
+            ewaste_results = ewaste_model(image, conf=0.25)
 
-        combined_image = waste_result.plot()
-        combined_image = Image.fromarray(combined_image)
-        buffered = io.BytesIO()
-        combined_image.save(buffered, format="JPEG")
-        img_str = base64.b64encode(buffered.getvalue()).decode()
+            waste_result = waste_results[0]
+            medwaste_result = medwaste_results[0]
+            ewaste_result = ewaste_results[0]
+        except Exception as e:
+            print(f"Error during detection: {str(e)}")
+            print(f"Traceback: {traceback.format_exc()}")
+            return jsonify({
+                'success': False,
+                'error': 'Error during object detection. Please try again.'
+            }), 500
+        
+        # Create visualization with all detections
+        try:
+            print("Creating visualization...")
+            # Start with the original image
+            vis_image = image.copy()
+            draw = ImageDraw.Draw(vis_image)
+            
+            # Define colors for different types of waste
+            colors = {
+                'waste': (0, 255, 0),    # Green for general waste
+                'medwaste': (255, 0, 0),  # Red for medical waste
+                'ewaste': (0, 0, 255)     # Blue for e-waste
+            }
+            
+            # Process waste detections
+            for box in waste_result.boxes:
+                class_id = int(box.cls[0])
+                confidence = float(box.conf[0])
+                if confidence >= 0.4:
+                    x1, y1, x2, y2 = box.xyxy[0].tolist()
+                    label = f"{WASTE_CLASS_NAMES.get(class_id, f'Unknown ({class_id})')} {confidence:.2f}"
+                    
+                    # Draw box
+                    draw.rectangle([x1, y1, x2, y2], outline=colors['waste'], width=2)
+                    # Draw label background
+                    text_bbox = draw.textbbox((x1, y1), label)
+                    draw.rectangle([text_bbox[0]-2, text_bbox[1]-2, text_bbox[2]+2, text_bbox[3]+2], 
+                                 fill=colors['waste'])
+                    # Draw label
+                    draw.text((x1, y1), label, fill='white')
 
+            # Process medical waste detections
+            for box in medwaste_result.boxes:
+                class_id = int(box.cls[0])
+                confidence = float(box.conf[0])
+                if confidence >= 0.4:
+                    x1, y1, x2, y2 = box.xyxy[0].tolist()
+                    label = f"{MEDWASTE_CLASS_NAMES.get(class_id, f'Unknown ({class_id})')} {confidence:.2f}"
+                    
+                    # Draw box
+                    draw.rectangle([x1, y1, x2, y2], outline=colors['medwaste'], width=2)
+                    # Draw label background
+                    text_bbox = draw.textbbox((x1, y1), label)
+                    draw.rectangle([text_bbox[0]-2, text_bbox[1]-2, text_bbox[2]+2, text_bbox[3]+2], 
+                                 fill=colors['medwaste'])
+                    # Draw label
+                    draw.text((x1, y1), label, fill='white')
+
+            # Process e-waste detections
+            for box in ewaste_result.boxes:
+                class_id = int(box.cls[0])
+                confidence = float(box.conf[0])
+                if confidence >= 0.25:
+                    x1, y1, x2, y2 = box.xyxy[0].tolist()
+                    label = f"{EWASTE_CLASS_NAMES.get(class_id, f'Unknown ({class_id})')} {confidence:.2f}"
+                    
+                    # Draw box
+                    draw.rectangle([x1, y1, x2, y2], outline=colors['ewaste'], width=2)
+                    # Draw label background
+                    text_bbox = draw.textbbox((x1, y1), label)
+                    draw.rectangle([text_bbox[0]-2, text_bbox[1]-2, text_bbox[2]+2, text_bbox[3]+2], 
+                                 fill=colors['ewaste'])
+                    # Draw label
+                    draw.text((x1, y1), label, fill='white')
+            
+            # Convert to base64
+            buffered = io.BytesIO()
+            vis_image.save(buffered, format="JPEG", quality=95)
+            img_str = base64.b64encode(buffered.getvalue()).decode()
+        except Exception as e:
+            print(f"Error creating visualization: {str(e)}")
+            print(f"Traceback: {traceback.format_exc()}")
+            return jsonify({
+                'success': False,
+                'error': 'Error creating visualization. Please try again.'
+            }), 500
+        
+        # Process detections for response
         detections = []
-
+        
+        # Process waste detections
         for box in waste_result.boxes:
             class_id = int(box.cls[0])
-            detections.append({
-                'model': 'waste',
-                'class': class_id,
-                'class_name': WASTE_CLASS_NAMES.get(class_id, f"Unknown ({class_id})"),
-                'confidence': float(box.conf[0]),
-                'box': box.xyxy[0].tolist()
-            })
+            confidence = float(box.conf[0])
+            if confidence >= 0.4:
+                detections.append({
+                    'model': 'waste',
+                    'class': class_id,
+                    'class_name': WASTE_CLASS_NAMES.get(class_id, f"Unknown ({class_id})"),
+                    'confidence': confidence,
+                    'box': box.xyxy[0].tolist()
+                })
 
+        # Process medical waste detections
         for box in medwaste_result.boxes:
             class_id = int(box.cls[0])
-            detections.append({
-                'model': 'medwaste',
-                'class': class_id,
-                'class_name': MEDWASTE_CLASS_NAMES.get(class_id, f"Unknown ({class_id})"),
-                'confidence': float(box.conf[0]),
-                'box': box.xyxy[0].tolist()
-            })
+            confidence = float(box.conf[0])
+            if confidence >= 0.4:
+                detections.append({
+                    'model': 'medwaste',
+                    'class': class_id,
+                    'class_name': MEDWASTE_CLASS_NAMES.get(class_id, f"Unknown ({class_id})"),
+                    'confidence': confidence,
+                    'box': box.xyxy[0].tolist()
+                })
 
+        # Process e-waste detections
         for box in ewaste_result.boxes:
             class_id = int(box.cls[0])
-            detections.append({
-                'model': 'ewaste',
-                'class': class_id,
-                'class_name': EWASTE_CLASS_NAMES.get(class_id, f"Unknown ({class_id})"),
-                'confidence': float(box.conf[0]),
-                'box': box.xyxy[0].tolist()
-            })
+            confidence = float(box.conf[0])
+            if confidence >= 0.25:
+                detections.append({
+                    'model': 'ewaste',
+                    'class': class_id,
+                    'class_name': EWASTE_CLASS_NAMES.get(class_id, f"Unknown ({class_id})"),
+                    'confidence': confidence,
+                    'box': box.xyxy[0].tolist()
+                })
 
-        # EfficientNet classification
-        prediction, confidence = classify_with_efficientnet(image)
-        detections.append({
-            'model': 'efficientnet',
-            'prediction': prediction,
-            'confidence': confidence
-        })
-
-        filename, ai_analysis = save_detection_results(image_name, detections)
-
-        return jsonify({
+        # Save results and get analysis
+        try:
+            print("Saving results and getting analysis...")
+            filename, ai_analysis = save_detection_results(image_name, detections)
+        except Exception as e:
+            print(f"Error saving results: {str(e)}")
+            print(f"Traceback: {traceback.format_exc()}")
+            return jsonify({
+                'success': False,
+                'error': 'Error saving results. Please try again.'
+            }), 500
+        
+        # Prepare response
+        response = {
             'success': True,
             'image': img_str,
             'filename': filename,
-            'ai_analysis': ai_analysis
-        })
+            'ai_analysis': ai_analysis,
+            'detections': detections,
+            'summary': {
+                'total_detections': len(detections),
+                'waste_count': len([d for d in detections if d['model'] == 'waste']),
+                'medical_waste_count': len([d for d in detections if d['model'] == 'medwaste']),
+                'e_waste_count': len([d for d in detections if d['model'] == 'ewaste'])
+            },
+            'preview': {
+                'url': f"data:image/jpeg;base64,{img_str}",
+                'type': 'image/jpeg'
+            }
+        }
+        
+        print("Processing completed successfully!")
+        return jsonify(response)
 
     except Exception as e:
-        print(f"Error: {str(e)}")
-        return jsonify({'success': False, 'error': f"Internal server error: {str(e)}"}), 500
+        print(f"Error processing image: {str(e)}")
+        print(f"Traceback: {traceback.format_exc()}")
+        return jsonify({
+            'success': False,
+            'error': f"Internal server error: {str(e)}"
+        }), 500
 
 @app.route('/api/classify', methods=['POST'])
 def classify_image():

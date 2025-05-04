@@ -1,0 +1,181 @@
+{
+  "timestamp": "2025-05-04T23:19:39.389222",
+  "image_name": "canette.jfif",
+  "detections": [
+    {
+      "model": "waste",
+      "class": 0,
+      "class_name": "glass",
+      "confidence": 0.4015394151210785,
+      "box": [
+        0.0037208199501037598,
+        13.30114459991455,
+        228.14854431152344,
+        168.509033203125
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.8449110388755798,
+      "box": [
+        21.3730525970459,
+        73.63589477539062,
+        65.98368835449219,
+        157.6215362548828
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.7711338400840759,
+      "box": [
+        0.1055598258972168,
+        59.08855056762695,
+        43.09375762939453,
+        137.97918701171875
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.7670224905014038,
+      "box": [
+        107.71373748779297,
+        65.07733154296875,
+        144.9510498046875,
+        159.27244567871094
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.7601040601730347,
+      "box": [
+        57.8795051574707,
+        12.534947395324707,
+        100.3637924194336,
+        142.31849670410156
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.6248697638511658,
+      "box": [
+        133.32833862304688,
+        34.14381790161133,
+        169.49676513671875,
+        126.27973937988281
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.5617523193359375,
+      "box": [
+        97.46084594726562,
+        45.3237419128418,
+        130.9045867919922,
+        134.44569396972656
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 4,
+      "class_name": "battery",
+      "confidence": 0.553016185760498,
+      "box": [
+        147.57518005371094,
+        82.73667907714844,
+        220.33987426757812,
+        167.58047485351562
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.5497998595237732,
+      "box": [
+        147.24600219726562,
+        59.60829162597656,
+        194.1903076171875,
+        161.85057067871094
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 4,
+      "class_name": "battery",
+      "confidence": 0.48245325684547424,
+      "box": [
+        215.66973876953125,
+        70.82829284667969,
+        251.2406005859375,
+        169.0323944091797
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 4,
+      "class_name": "battery",
+      "confidence": 0.4181396961212158,
+      "box": [
+        232.40133666992188,
+        22.651132583618164,
+        272.9758605957031,
+        136.34193420410156
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.41655102372169495,
+      "box": [
+        146.88583374023438,
+        81.20123291015625,
+        219.77781677246094,
+        167.28665161132812
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.40464508533477783,
+      "box": [
+        232.12808227539062,
+        22.48813819885254,
+        273.2886047363281,
+        127.6710205078125
+      ]
+    },
+    {
+      "model": "efficientnet",
+      "prediction": "unknown",
+      "confidence": 0.0
+    }
+  ],
+  "summary": {
+    "waste_detections": 1,
+    "medical_waste_detections": 0,
+    "battery_detections": 12,
+    "efficientnet_classification": {
+      "model": "efficientnet",
+      "prediction": "unknown",
+      "confidence": 0.0
+    }
+  },
+  "ai_analysis": {
+    "success": false,
+    "error": "401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions"
+  }
+}

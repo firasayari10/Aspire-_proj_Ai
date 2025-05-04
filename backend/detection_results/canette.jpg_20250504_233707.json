@@ -1,0 +1,318 @@
+{
+  "timestamp": "2025-05-04T23:37:07.430496",
+  "image_name": "canette.jpg",
+  "detections": [
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.8761202692985535,
+      "box": [
+        4066.703369140625,
+        1002.8924560546875,
+        4998.0,
+        1912.524169921875
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.8247737288475037,
+      "box": [
+        518.87841796875,
+        420.9773864746094,
+        1556.1650390625,
+        1812.9012451171875
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.7849676609039307,
+      "box": [
+        3058.04248046875,
+        2492.964599609375,
+        4693.12255859375,
+        3318.390380859375
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.7736501097679138,
+      "box": [
+        4540.1953125,
+        1819.14697265625,
+        4998.0,
+        3332.0
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.7649313807487488,
+      "box": [
+        0.0,
+        2555.3056640625,
+        445.68023681640625,
+        3316.554443359375
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.7521936893463135,
+      "box": [
+        3080.525390625,
+        2502.688232421875,
+        4236.58935546875,
+        3318.658447265625
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.7395471334457397,
+      "box": [
+        3112.839599609375,
+        1008.8941040039062,
+        4102.1220703125,
+        1909.7286376953125
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.7159038782119751,
+      "box": [
+        1102.8985595703125,
+        1712.9862060546875,
+        2294.43115234375,
+        3266.21728515625
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.6799238324165344,
+      "box": [
+        3536.4208984375,
+        1713.9102783203125,
+        4564.12890625,
+        2699.327392578125
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.6613484025001526,
+      "box": [
+        2103.22900390625,
+        2676.437744140625,
+        3066.906005859375,
+        3308.930419921875
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.6408054828643799,
+      "box": [
+        289.67401123046875,
+        2601.4384765625,
+        1297.9835205078125,
+        3315.036376953125
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.6236648559570312,
+      "box": [
+        2602.21875,
+        1822.785888671875,
+        3596.525146484375,
+        2764.80908203125
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.5883457064628601,
+      "box": [
+        4588.74560546875,
+        359.22491455078125,
+        4998.0,
+        1091.5032958984375
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.5649060010910034,
+      "box": [
+        4197.60791015625,
+        0.0,
+        4997.84765625,
+        551.5948486328125
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.5540943741798401,
+      "box": [
+        0.4307096302509308,
+        997.5914306640625,
+        791.8223266601562,
+        1875.220703125
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.5210286974906921,
+      "box": [
+        3676.19091796875,
+        398.1802978515625,
+        4605.2919921875,
+        1228.0364990234375
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.5102069973945618,
+      "box": [
+        3367.21435546875,
+        0.0,
+        4246.658203125,
+        504.8629455566406
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.4967610538005829,
+      "box": [
+        2841.207763671875,
+        354.60601806640625,
+        3702.277099609375,
+        1183.3162841796875
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.4934781789779663,
+      "box": [
+        1720.0963134765625,
+        0.0,
+        2571.7744140625,
+        518.0281982421875
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.42951568961143494,
+      "box": [
+        2534.24267578125,
+        0.0,
+        3409.947021484375,
+        521.89013671875
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.36727258563041687,
+      "box": [
+        2238.080810546875,
+        1200.462158203125,
+        3203.311767578125,
+        2137.329833984375
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.3509010970592499,
+      "box": [
+        1095.301025390625,
+        1710.3193359375,
+        2318.302001953125,
+        2688.1328125
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.2853154242038727,
+      "box": [
+        0.251609742641449,
+        1785.445556640625,
+        504.4356689453125,
+        2768.633544921875
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.2844471037387848,
+      "box": [
+        1565.2852783203125,
+        1236.4215087890625,
+        2591.77197265625,
+        2883.368896484375
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.26074910163879395,
+      "box": [
+        0.5327119827270508,
+        1800.2213134765625,
+        284.455078125,
+        2650.25732421875
+      ]
+    }
+  ],
+  "summary": {
+    "waste_detections": 0,
+    "medical_waste_detections": 0,
+    "battery_detections": 25
+  },
+  "ai_analysis": {
+    "success": true,
+    "analysis": " Environmental Impact Analysis:\nThe detected waste \"drycell\" primarily refers to household batteries, which when improperly disposed of, can have a significant negative impact on the environment. Drycells contain heavy metals such as lead, mercury, cadmium, and nickel, which are toxic to both human health and the environment. Disposal of these batteries in landfills can contaminate soil and water, affecting ecosystems and groundwater supplies.\n\n Proper Disposal Recommendations:\n1. It is recommended to recycle drycells whenever possible at designated battery recycling centers. Many electronics stores and recycling facilities accept used batteries for free.\n2. If a recycling center is not available, drycells should be disposed of in specialized waste collection programs or designated household hazardous waste facilities.\n3. Never put drycells in the regular trash as this can harm waste workers and negatively impact the environment.\n\n Safety Precautions:\n1. Avoid exposing drycells to heat, as this can cause them to leak and release harmful substances.\n2. Handle drycells with care to prevent breaking or puncturing, which can lead to leakage.\n3. If a drycell is punctured or damaged, they should be placed in a sealed plastic bag before disposal.\n4. Wear protective gloves and eyewear when handling drycells to minimize exposure to the harmful substances they contain.\n\nRecycling Guidelines:\n1. Remove any plastic or foil casing from the drycell before recycling to expose the metal parts.\n2. Ensure that the battery tabs are separated before recycling.\n3. Do not mix drycells with other types of batteries, as they may have different recycling processes.\n4. Follow the instructions provided by the recycling center for proper battery recycling.\n\nBy following these recommendations, you can help minimize the environmental impact of drycells and ensure safe handling and disposal.",
+    "detected_waste_types": [
+      "drycell"
+    ]
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "timestamp": "2025-05-04T23:22:28.323318",
+  "image_name": "bout.jfif",
+  "detections": [
+    {
+      "model": "waste",
+      "class": 0,
+      "class_name": "glass",
+      "confidence": 0.49996769428253174,
+      "box": [
+        69.04886627197266,
+        24.434741973876953,
+        164.25804138183594,
+        229.37945556640625
+      ]
+    },
+    {
+      "model": "medwaste",
+      "class": 0,
+      "class_name": "biohazard",
+      "confidence": 0.6527907252311707,
+      "box": [
+        55.20545196533203,
+        1.3637561798095703,
+        164.50843811035156,
+        229.87705993652344
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.8833630681037903,
+      "box": [
+        82.89678955078125,
+        62.47416305541992,
+        137.38636779785156,
+        101.64566802978516
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.8732098937034607,
+      "box": [
+        83.21114349365234,
+        101.03234100341797,
+        137.8704071044922,
+        127.128662109375
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.8512572050094604,
+      "box": [
+        83.75025177001953,
+        127.51428985595703,
+        138.52688598632812,
+        225.277099609375
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.4749077558517456,
+      "box": [
+        94.51771545410156,
+        33.7517204284668,
+        124.15711975097656,
+        55.574737548828125
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.4046367108821869,
+      "box": [
+        83.35786437988281,
+        127.48640441894531,
+        138.84414672851562,
+        152.36265563964844
+      ]
+    },
+    {
+      "model": "efficientnet",
+      "prediction": "plastic_water_bottles",
+      "confidence": 0.9995322227478027
+    }
+  ],
+  "summary": {
+    "waste_detections": 1,
+    "medical_waste_detections": 1,
+    "battery_detections": 5,
+    "efficientnet_classification": {
+      "model": "efficientnet",
+      "prediction": "plastic_water_bottles",
+      "confidence": 0.9995322227478027
+    }
+  },
+  "ai_analysis": {
+    "success": true,
+    "analysis": "Based on the detected waste types (plastic_water_bottles, biohazard, battery, glass), here are some general recommendations:\n\n1. Environmental Impact:\n- Proper waste segregation is crucial for environmental protection\n- Different types of waste require different handling methods\n\n2. Disposal Recommendations:\n- Follow local waste management guidelines\n- Use designated collection points for each waste type\n\n3. Safety Precautions:\n- Wear appropriate protective equipment when handling waste\n- Keep waste containers properly sealed\n\n4. Recycling Guidelines:\n- Check local recycling facilities for accepted materials\n- Clean and sort recyclable materials before disposal",
+    "detected_waste_types": [
+      "plastic_water_bottles",
+      "biohazard",
+      "battery",
+      "glass"
+    ]
+  }
+}

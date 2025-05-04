@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-05-04T23:21:28.959748",
+  "image_name": "bottle.jfif",
+  "detections": [
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.5157763957977295,
+      "box": [
+        117.59209442138672,
+        0.5391347408294678,
+        224.78578186035156,
+        104.97017669677734
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.427052766084671,
+      "box": [
+        117.38159942626953,
+        32.582027435302734,
+        224.43629455566406,
+        102.06825256347656
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.40891802310943604,
+      "box": [
+        71.73328399658203,
+        34.93983840942383,
+        142.8896942138672,
+        153.32786560058594
+      ]
+    },
+    {
+      "model": "efficientnet",
+      "prediction": "plastic_water_bottles",
+      "confidence": 0.9967854022979736
+    }
+  ],
+  "summary": {
+    "waste_detections": 0,
+    "medical_waste_detections": 0,
+    "battery_detections": 3,
+    "efficientnet_classification": {
+      "model": "efficientnet",
+      "prediction": "plastic_water_bottles",
+      "confidence": 0.9967854022979736
+    }
+  },
+  "ai_analysis": {
+    "success": true,
+    "analysis": "Based on the detected waste types (plastic_water_bottles, battery), here are some general recommendations:\n\n1. Environmental Impact:\n- Proper waste segregation is crucial for environmental protection\n- Different types of waste require different handling methods\n\n2. Disposal Recommendations:\n- Follow local waste management guidelines\n- Use designated collection points for each waste type\n\n3. Safety Precautions:\n- Wear appropriate protective equipment when handling waste\n- Keep waste containers properly sealed\n\n4. Recycling Guidelines:\n- Check local recycling facilities for accepted materials\n- Clean and sort recyclable materials before disposal",
+    "detected_waste_types": [
+      "plastic_water_bottles",
+      "battery"
+    ]
+  }
+}

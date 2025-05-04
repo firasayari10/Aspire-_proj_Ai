@@ -1,0 +1,126 @@
+{
+  "timestamp": "2025-05-04T23:41:24.313581",
+  "image_name": "cans.jpg",
+  "detections": [
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.8542083501815796,
+      "box": [
+        1197.802001953125,
+        252.60311889648438,
+        1499.784423828125,
+        681.327392578125
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.825133204460144,
+      "box": [
+        895.4638061523438,
+        605.8147583007812,
+        1499.437744140625,
+        1000.0
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.7543923258781433,
+      "box": [
+        0.028431415557861328,
+        670.3046264648438,
+        376.9032897949219,
+        998.08056640625
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.7016447186470032,
+      "box": [
+        0.039839744567871094,
+        223.62490844726562,
+        326.0721130371094,
+        600.2880859375
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.591410219669342,
+      "box": [
+        680.7890014648438,
+        270.5577697753906,
+        1321.7142333984375,
+        813.9697265625
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.48728707432746887,
+      "box": [
+        0.0,
+        443.2927551269531,
+        373.3330383300781,
+        996.0094604492188
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.48178616166114807,
+      "box": [
+        1296.7835693359375,
+        0.0,
+        1499.9287109375,
+        297.9244384765625
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.45308756828308105,
+      "box": [
+        638.8126831054688,
+        0.0,
+        1027.259033203125,
+        128.7234344482422
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.3344312906265259,
+      "box": [
+        182.4962158203125,
+        367.4487609863281,
+        541.9984130859375,
+        731.434326171875
+      ]
+    }
+  ],
+  "summary": {
+    "waste_detections": 0,
+    "medical_waste_detections": 0,
+    "battery_detections": 9
+  },
+  "ai_analysis": {
+    "success": true,
+    "analysis": " Environmental Impact Analysis:\nDry cells, also known as alkaline batteries, are common household items that, while not considered highly toxic, can still have a significant environmental impact if not disposed of properly. They contain materials such as zinc, manganese dioxide, and potassium hydroxide. When improperly disposed of, these materials can leach into the soil and groundwater, potentially contaminating these resources and harming aquatic life.\n\nProper Disposal Recommendations:\n1. Do not throw dry cells in the trash. Instead, recycle them if possible. Check local recycling programs for battery recycling facilities.\n2. If recycling is not available, place used dry cells in a designated hazardous waste collection site.\n\nSafety Precautions:\n1. Do not puncture or crack dry cells, as this can lead to leaking and potential contamination.\n2. Do not attempt to recharge or biologically degrade dry cells, as this can be dangerous and ineffective.\n3. When handling dry cells, use gloves to minimize direct contact with the battery and any acidic or alkaline materials it contains.\n\nRecycling Guidelines:\n1. If dry cells are to be recycled, follow these steps:\n   a. Remove any tape, label, or other foreign material from the battery.\n   b. Place the batteries in a protective container (such as a tape or a tightly sealed plastic bag) to prevent leakage before recycling.\n   c. Recycle batteries at a designated hazardous waste collection site or battery recycling facility.\n   d. If in doubt, follow local recycling guidelines, as they may have specific regulations for handling and disposing of used dry cells.",
+    "detected_waste_types": [
+      "drycell"
+    ]
+  }
+}

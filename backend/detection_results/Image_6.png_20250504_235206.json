@@ -1,0 +1,213 @@
+{
+  "timestamp": "2025-05-04T23:52:06.430111",
+  "image_name": "Image_6.png",
+  "detections": [
+    {
+      "model": "waste",
+      "class": 0,
+      "class_name": "glass",
+      "confidence": 0.5756577849388123,
+      "box": [
+        0.0,
+        5.154693603515625,
+        254.8662567138672,
+        245.15350341796875
+      ]
+    },
+    {
+      "model": "medwaste",
+      "class": 0,
+      "class_name": "biohazard",
+      "confidence": 0.5231055021286011,
+      "box": [
+        144.283203125,
+        71.2002944946289,
+        173.40859985351562,
+        181.60824584960938
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.7549960017204285,
+      "box": [
+        187.7830810546875,
+        109.80668640136719,
+        204.55795288085938,
+        149.86618041992188
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.737112283706665,
+      "box": [
+        55.627601623535156,
+        156.5991668701172,
+        72.73868560791016,
+        186.74636840820312
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.7017561793327332,
+      "box": [
+        120.52201843261719,
+        88.88574981689453,
+        131.9270477294922,
+        118.9112777709961
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.6818093061447144,
+      "box": [
+        3.5430939197540283,
+        153.47926330566406,
+        19.54983901977539,
+        182.85598754882812
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.6180498003959656,
+      "box": [
+        171.18643188476562,
+        150.1073455810547,
+        207.97317504882812,
+        189.8151092529297
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.5991895198822021,
+      "box": [
+        23.267602920532227,
+        138.8229522705078,
+        52.60725021362305,
+        186.51638793945312
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.48540422320365906,
+      "box": [
+        150.02792358398438,
+        111.90632629394531,
+        170.09017944335938,
+        187.5745391845703
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 5,
+      "class_name": "drycell",
+      "confidence": 0.37511497735977173,
+      "box": [
+        91.6145248413086,
+        78.33650970458984,
+        105.21543884277344,
+        108.66595458984375
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.3448178470134735,
+      "box": [
+        201.22537231445312,
+        151.099609375,
+        210.7921142578125,
+        186.4001007080078
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.32248416543006897,
+      "box": [
+        91.449462890625,
+        78.63543701171875,
+        104.3256607055664,
+        109.16322326660156
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.2976178526878357,
+      "box": [
+        31.9656982421875,
+        138.98776245117188,
+        52.78496170043945,
+        186.3578338623047
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.2894110083580017,
+      "box": [
+        22.08333396911621,
+        138.22213745117188,
+        36.74845886230469,
+        185.7404327392578
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.28275418281555176,
+      "box": [
+        205.56307983398438,
+        108.98291015625,
+        220.92837524414062,
+        148.179443359375
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.2607535421848297,
+      "box": [
+        102.99385833740234,
+        110.82475280761719,
+        137.67999267578125,
+        189.5769500732422
+      ]
+    }
+  ],
+  "summary": {
+    "waste_detections": 1,
+    "medical_waste_detections": 1,
+    "battery_detections": 14
+  },
+  "ai_analysis": {
+    "success": true,
+    "analysis": " Environmental Impact Analysis:\n1. Glass: Glass waste, though inanimate, can contribute to landfill pollution and take a significant amount of time to decompose. Inappropriate disposal can lead to pollution of soil and water sources.\n2. Battery: Disposable batteries can contain harmful substances like lead, mercury, and cadmium, posing a threat to the environment if not disposed of properly. They can pollute the soil and water sources if left in landfills.\n3. Drycell: Some dry cells contain cadmium, zinc, manganese, and silver, which can be harmful to the environment if disposed of improperly.\n4. Biohazard: Biohazard waste can potentially contain harmful pathogens that can spread disease. If not disposed of properly, it can contaminate the environment and pose a threat to human health.\n\nProper Disposal Recommendations:\n1. Glass: Recycling is the best option for glass waste. Many recycling centers accept broken or whole glass bottles and jars.\n2. Battery: Rechargeable batteries can be reused, but disposable batteries should be taken to a household hazardous waste collection site for safe disposal.\n3. Drycell: Dry cells should be taken to a household hazardous waste collection site or a local electronics recycling center.\n4. Biohazard: Biohazard waste should be handled by trained professionals and disposed of at an approved biohazard disposal facility.\n\nSafety Precautions:\n1. Always wear protective gloves and clothing when handling any type of waste to minimize direct contact and potential contamination.\n2. Do not touch or break any items that could potentially be a biohazard without proper protective equipment and training.\n3. Never attempt to dispose of biohazard waste yourself; always seek professional help.\n4. When transporting waste to disposal facilities, ensure it is properly packaged to prevent leakage or spillage.\n\nRecycling Guidelines:\n1. Glass: Rinse glass containers thoroughly before recycling to prevent contamination of the recycling sorting machinery.\n2. Batteries: Rechargeable batteries should be recharged as many times as possible before recycling. Disposable batteries should be recycled whenever possible.\n3. Dry cell: Dispose of completely drained, qualifying dry cells at a household hazardous waste collection site or local electronics recycling center.\n4. Biohazard: Due to the potential for disease transmission, do not attempt to recycle biohazard waste. Always seek professional help for its disposal.",
+    "detected_waste_types": [
+      "glass",
+      "battery",
+      "drycell",
+      "biohazard"
+    ]
+  }
+}
