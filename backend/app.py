@@ -26,11 +26,11 @@ app = Flask(__name__)
 CORS(app)
 
 # OpenRouter Configuration
-OPENROUTER_API_KEY = "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"
+OPENROUTER_API_KEY = ""
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 # Mistral API Configuration
-openai.api_key = "1QUMWhu2cSOcEupqAvsyuU0j37aCnOqb"
+openai.api_key = ""
 openai.api_base = "https://api.mistral.ai/v1"
 
 # Model paths
