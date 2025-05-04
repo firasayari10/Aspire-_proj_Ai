@@ -9,5 +9,26 @@ pip install -r requirements.txt
 
 
 
+to run the project : 
 
+( commands in order )
+
+
+cd backend
+
+python app.py
+click on the link 
+
+
+( open another powershell at the same time ( do not close the first one ) )
+
+cd frontend
+npm start 
+( it will direct you automaticcally to the website)
+
+
+
+
+while testing the first few attemps might give network error (because of the api )
+give it some more tires and time !
 
