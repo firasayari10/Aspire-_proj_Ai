@@ -1,0 +1,54 @@
+{
+  "timestamp": "2025-05-04T13:32:43.603413",
+  "image_name": "bottle.jfif",
+  "detections": [
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.5157763957977295,
+      "box": [
+        117.59209442138672,
+        0.5391347408294678,
+        224.78578186035156,
+        104.97017669677734
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.427052766084671,
+      "box": [
+        117.38159942626953,
+        32.582027435302734,
+        224.43629455566406,
+        102.06825256347656
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.40891802310943604,
+      "box": [
+        71.73328399658203,
+        34.93983840942383,
+        142.8896942138672,
+        153.32786560058594
+      ]
+    }
+  ],
+  "summary": {
+    "waste_detections": 0,
+    "medical_waste_detections": 0,
+    "battery_detections": 3
+  },
+  "ai_analysis": {
+    "success": true,
+    "analysis": " Environmental Impact Analysis:\nBatteries, particularly alkaline and nickel-cadmium batteries, can have a significant environmental impact due to their chemical composition.\n\n1. Heavy Metals Pollution: Batteries contain heavy metals like lead, mercury, and cadmium, which are hazardous to both the environment and human health. If disposed of improperly, these metals can contaminate soil and water sources, posing risks to aquatic and terrestrial life.\n\n2. Landfill Issue: If not recycled, batteries can take hundreds of years to decompose in landfills, occupying limited space and releasing harmful chemicals into the environment.\n\nProper Disposal Recommendations:\n\n1. Do not burn or crush batteries, as this can release toxic fumes and fragments that may enter the environment.\n2. Ensure that batteries are disposed of at local hazardous waste facilities, recycling centers, or designated collection points.\n3. Check with local community waste management programs for specific guidelines and facilities near you.\n\nSafety Precautions:\n\n1. Handle batteries with care to prevent leakage and potential chemical burns.\n2. Avoid mixing different types of batteries, as this can cause a dangerous chemical reaction.\n3. Store batteries in a cool, dry place away from materials that could spark a fire, such as rags, paper, or flammable materials.\n\nRecycling Guidelines:\n\n1. Rechargeable batteries can be recycled and contribute to the recovery of valuable materials such as steel, nickel, cadmium, and mercury.\n2. Alkaline batteries are more difficult to recycle, but some programs accept them for recycling due to the recovery of valuable materials like zinc, manganese, and aluminum.\n3. Follow local recycling guidelines for battery recycling and ensure that recyclables are properly labeled and sorted to ensure efficient processing.\n4. For large quantities of batteries, contact a local battery manufacturer, recycler, or hazardous waste facility to inquire about battery recycling options.",
+    "detected_waste_types": [
+      "battery"
+    ]
+  }
+}

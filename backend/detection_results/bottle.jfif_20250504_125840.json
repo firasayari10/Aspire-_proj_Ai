@@ -1,0 +1,54 @@
+{
+  "timestamp": "2025-05-04T12:58:40.700537",
+  "image_name": "bottle.jfif",
+  "detections": [
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.5157763957977295,
+      "box": [
+        117.59209442138672,
+        0.5391347408294678,
+        224.78578186035156,
+        104.97017669677734
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.427052766084671,
+      "box": [
+        117.38159942626953,
+        32.582027435302734,
+        224.43629455566406,
+        102.06825256347656
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.40891802310943604,
+      "box": [
+        71.73328399658203,
+        34.93983840942383,
+        142.8896942138672,
+        153.32786560058594
+      ]
+    }
+  ],
+  "summary": {
+    "waste_detections": 0,
+    "medical_waste_detections": 0,
+    "battery_detections": 3
+  },
+  "ai_analysis": {
+    "success": true,
+    "analysis": " Environmental Impact Analysis:\n\n1. Pollution of Soil and Water: If not disposed of properly, spent batteries can leak harmful substances like lead, mercury, cadmium, and nickel. These substances can contaminate soil and water bodies, posing a risk to plants, aquatic life, and humans.\n\n2. Greenhouse Gas Emissions: improper disposal in landfills can lead to the release of greenhouse gases during the breakdown process, contributing to climate Change.\n\n3. Resource Waste: Batteries contain valuable metals that can be recycled. By not recycling, we waste these resources and increase the demand for mining, which can have harmful environmental impacts.\n\nProper Disposal Recommendations:\n- Do not throw batteries in the trash. Instead, recycle them.\n- Check with your local waste management authority to find out about battery recycling options in your area.\n- Some retail stores that sell batteries may have recycling programs.\n\nSafety Precautions:\n- Avoid crushing, puncturing, or mixing used batteries with other types of batteries.\n- Store spent batteries in a secure, dry place, away from children and pets.\n- Do not recycle batteries with other household waste.\n- If a battery leaks, clean the area with a damp cloth, and do not let the liquid come into contact with skin.\n\nRecycling Guidelines:\n- Remove any plastic or foil packaging before recycling.\n- Alkaline batteries, such as AA and AAA, are seldom recycled due to the low concentration of valuable metals. They can be thrown in regular trash.\n- Rechargeable and other specialty batteries contain valuable metals and should be recycled.\n- Always follow your local recycling guidelines for specific regulations in your area.\n\nIt's important to prioritize responsible battery disposal for a cleaner, greener environment and to conserve valuable resources. The more we recycle, the less environmental destruction caused by battery production and improper waste management.",
+    "detected_waste_types": [
+      "battery"
+    ]
+  }
+}

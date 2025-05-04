@@ -1,0 +1,54 @@
+{
+  "timestamp": "2025-05-04T12:59:49.801547",
+  "image_name": "bottle.jfif",
+  "detections": [
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.5157763957977295,
+      "box": [
+        117.59209442138672,
+        0.5391347408294678,
+        224.78578186035156,
+        104.97017669677734
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.427052766084671,
+      "box": [
+        117.38159942626953,
+        32.582027435302734,
+        224.43629455566406,
+        102.06825256347656
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.40891802310943604,
+      "box": [
+        71.73328399658203,
+        34.93983840942383,
+        142.8896942138672,
+        153.32786560058594
+      ]
+    }
+  ],
+  "summary": {
+    "waste_detections": 0,
+    "medical_waste_detections": 0,
+    "battery_detections": 3
+  },
+  "ai_analysis": {
+    "success": true,
+    "analysis": " Environmental Impact Analysis:\nBatteries, particularly those containing heavy metals like lead, nickel, and cadmium, can have significant environmental impacts if improperly disposed of. They can contaminate soil and groundwater, posing risks to human health and the environment. leakage of chemicals from batteries can harm aquatic life and disrupt ecosystems. The manufacturing process also contributes to air pollution due to energy consumption and the release of greenhouse gases.\n\nProper Disposal Recommendations:\n1. Proper disposal of batteries is crucial. They should never be thrown in regular trash.\n2. Take used batteries to a local household hazardous waste collection center or recycling facility. In some areas, retailers that sell batteries may also accept them for recycling.\n3. Do not incinerate batteries as this can release toxic fumes into the air.\n4. If storing used batteries, keep them in a secure, dry place, away from children and pets.\n\nSafety Precautions:\n1. Never attempt to recharge, disassemble, or puncture a battery.\n2. Wear gloves and eye protection when handling used batteries.\n3. If a battery leaks, clean up any spilled liquid with a damp cloth and dispose of the cloth with the battery.\n4. Do not place batteries in a fire as they can explode.\n\nRecycling Guidelines:\n1. Recycling batteries helps conserve resources, prevent pollution, and reduce dependence on landfills.\n2. Battery recycling processes extract valuable metals likeLead, Mercury, Nickel, and Cadmium, which can be reused in new products.\n3. Recycling also reduces the need to extract these metals from ores, saving energy and reducing air and water pollution associated with those mining operations.\n4. Always check with your local recycling program for specific accepted battery types and recycling facilities.",
+    "detected_waste_types": [
+      "battery"
+    ]
+  }
+}

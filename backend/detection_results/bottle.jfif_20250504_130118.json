@@ -1,0 +1,54 @@
+{
+  "timestamp": "2025-05-04T13:01:18.084394",
+  "image_name": "bottle.jfif",
+  "detections": [
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.5157763957977295,
+      "box": [
+        117.59209442138672,
+        0.5391347408294678,
+        224.78578186035156,
+        104.97017669677734
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.427052766084671,
+      "box": [
+        117.38159942626953,
+        32.582027435302734,
+        224.43629455566406,
+        102.06825256347656
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.40891802310943604,
+      "box": [
+        71.73328399658203,
+        34.93983840942383,
+        142.8896942138672,
+        153.32786560058594
+      ]
+    }
+  ],
+  "summary": {
+    "waste_detections": 0,
+    "medical_waste_detections": 0,
+    "battery_detections": 3
+  },
+  "ai_analysis": {
+    "success": true,
+    "analysis": " Environmental Impact Analysis:\nBatteries, especially alkaline and NiCd batteries, do not pose significant environmental hazards when properly disposed of, but heavy metals such as lead, mercury, and cadmium contained in batteries like NiMH, NiCd, and button cells can cause harm to the environment ifnot disposed of properly. Lead acid batteries can cause acidity in the soil and water and impair aquatic life. Lithium-ion batteries can pose a fire hazard if crushed or heated.\n\nProper Disposal Recommendations:\n- Never dispose of batteries in the same bin as regular household waste.\n- Recycle batteries at designated collection centers. In the U.S., communities often have recycling programs for household batteries.\n- In many regions, it is legal to drop off household batteries at certain retail stores or recycling centers.\n- Rechargeable batteries like NiMH, NiCd, and lithium-ion batteries should be kept out of landfill.\n\nSafety Precautions:\n- Keep batteries out of reach of children and pets.\n- Never attempt to dismantle, puncture, or crush batteries.\n- Do not dispose of lithium-ion batteries in fire. Special precautions are required as water can intensify the hazard.\n\nRecycling Guidelines:\n- Most recycling centers use a specific process to recycle lead acid batteries, involving them being cracked open, drained, and then broken into small pieces.\n- For rechargeable batteries, they are shredded, chemically treated to separate the metals, and then separated through a series of magnets and eddy currents.\n- Alkaline batteries are mostly composed of zinc and manganese and can be recycled using a similar process to recycle aluminum cans.\n\nIt is essential to know the type of battery you are dealing with and find an appropriate recycling method. Household battery recycling can help conserve natural resources, protect the environment, and prevent potential hazards caused by improper disposal.",
+    "detected_waste_types": [
+      "battery"
+    ]
+  }
+}

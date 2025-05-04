@@ -1,0 +1,54 @@
+{
+  "timestamp": "2025-05-04T13:00:04.217445",
+  "image_name": "bottle.jfif",
+  "detections": [
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.5157763957977295,
+      "box": [
+        117.59209442138672,
+        0.5391347408294678,
+        224.78578186035156,
+        104.97017669677734
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.427052766084671,
+      "box": [
+        117.38159942626953,
+        32.582027435302734,
+        224.43629455566406,
+        102.06825256347656
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.40891802310943604,
+      "box": [
+        71.73328399658203,
+        34.93983840942383,
+        142.8896942138672,
+        153.32786560058594
+      ]
+    }
+  ],
+  "summary": {
+    "waste_detections": 0,
+    "medical_waste_detections": 0,
+    "battery_detections": 3
+  },
+  "ai_analysis": {
+    "success": true,
+    "analysis": " Environmentally, disposing of batteries incorrectly can have several negative effects. Batteries contain harmful substances such as lead, mercury, cadmium, and lithium, which can contaminate soil and water if not properly managed. This contamination can harm plants, animals, and humans, and it can also lead to the destruction of ecosystems.\n\nProper Disposal Recommendations:\n1. Household Batteries: Small household batteries like AA, AAA, C, D, 9V should be taken to local waste management facilities or recycling centers that accept batteries. Some retail stores may also have battery recycling programs.\n\n2. Rechargeable Batteries and Car Batteries: These batteries should not be placed in regular household waste. They need to be disposed of at designated collection points or recycling centers.\n\nSafety Precautions:\n1. Always keep batteries out of reach of children and pets.\n2. Do not puncture, crush, or expose the batteries to fire or extreme heat.\n3. If a battery leaks, clean up the spill immediately using a damp cloth and dispose of the used cloth in the regular household trash.\n\nRecycling Guidelines:\n1. Remove any packaging and place the batteries in a designated container for recycling.\n2. If your local waste management or recycling facility doesn't accept batteries, consider mail-back programs offered by some battery manufacturers.\n\n3. Never throw batteries in the trash or flush them down the toilet. This can lead to environmental pollution and potentially harm sewage workers.\n\n4. If you work with large quantities of batteries, consider sourcing rechargeable batteries to reduce waste.",
+    "detected_waste_types": [
+      "battery"
+    ]
+  }
+}

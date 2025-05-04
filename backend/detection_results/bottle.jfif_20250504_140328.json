@@ -1,0 +1,54 @@
+{
+  "timestamp": "2025-05-04T14:03:28.686865",
+  "image_name": "bottle.jfif",
+  "detections": [
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.5157763957977295,
+      "box": [
+        117.59209442138672,
+        0.5391347408294678,
+        224.78578186035156,
+        104.97017669677734
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.427052766084671,
+      "box": [
+        117.38159942626953,
+        32.582027435302734,
+        224.43629455566406,
+        102.06825256347656
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.40891802310943604,
+      "box": [
+        71.73328399658203,
+        34.93983840942383,
+        142.8896942138672,
+        153.32786560058594
+      ]
+    }
+  ],
+  "summary": {
+    "waste_detections": 0,
+    "medical_waste_detections": 0,
+    "battery_detections": 3
+  },
+  "ai_analysis": {
+    "success": true,
+    "analysis": " Environmental Impact Analysis:\n\nBatteries contain harmful substances such as lead, mercury, cadmium, and nickel. When improperly disposed of, these substances can contaminate soil and groundwater, posing threats to human health and the environment. Leakage from improperly disposed batteries can also release harmful gases, contributing to air pollution.\n\nProper Disposal Recommendations:\n\n1. Do not dispose of batteries in regular trash. Instead, take used batteries to designated battery recycling centers or collection points.\n2. If there are no recycling centers nearby, wrap used batteries in sealable plastic, place in a non-transparent bag, and dispose of them properly with household waste to minimize risks of leakage.\n3. Some municipalities may run household hazardous waste collection days – check with your local waste management authority for more information.\n\nSafety Precautions:\n\n1. Never touch batteries with bare hands, as they can cause electrical shocks or chemical burns.\n2. Store batteries away from heat sources and in a dry, ventilated location to prevent leaking and fire hazards.\n3. Recycle batteries properly to avoid accidental ingestion or exposure to hazardous materials by children and animals.\n\nRecycling Guidelines:\n\n1. Batteries are regularly recycled to recover valuable materials such as nickel, cadmium, lead, and zinc.\n2. Alkaline batteries (the common AA, AAA, C, D, and 9V types) can be safely disposed of in household waste or taken to a recycling center, as they are not considered hazardous waste due to their lower toxicity levels.\n3. Rechargeable batteries (NiCd, NiMH, and Li-ion) are more environmentally friendly since they can be reused multiple times. However, when their lifespan ends, they should be recycled.\n4. If you're unsure about the type of battery, follow the safety precautions and proper disposal recommendations listed above.\n\nFor more information on battery recycling and hazardous waste management, consult your local environmental protection agency or visit official recycling websites like Earth911 (https://www.earth911.com/) or Call2Recycle (https://www.call2recycle.org/). These resources can help you find recycling centers and provide additional information on battery types and recycling requirements.",
+    "detected_waste_types": [
+      "battery"
+    ]
+  }
+}

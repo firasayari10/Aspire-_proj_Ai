@@ -1,0 +1,104 @@
+{
+  "timestamp": "2025-05-04T16:13:17.811175",
+  "image_name": "bout.jfif",
+  "detections": [
+    {
+      "model": "waste",
+      "class": 0,
+      "class_name": "glass",
+      "confidence": 0.49996769428253174,
+      "box": [
+        69.04886627197266,
+        24.434741973876953,
+        164.25804138183594,
+        229.37945556640625
+      ]
+    },
+    {
+      "model": "medwaste",
+      "class": 0,
+      "class_name": "biohazard",
+      "confidence": 0.6527907252311707,
+      "box": [
+        55.20545196533203,
+        1.3637561798095703,
+        164.50843811035156,
+        229.87705993652344
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.8833630681037903,
+      "box": [
+        82.89678955078125,
+        62.47416305541992,
+        137.38636779785156,
+        101.64566802978516
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.8732098937034607,
+      "box": [
+        83.21114349365234,
+        101.03234100341797,
+        137.8704071044922,
+        127.128662109375
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.8512572050094604,
+      "box": [
+        83.75025177001953,
+        127.51428985595703,
+        138.52688598632812,
+        225.277099609375
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.4749077558517456,
+      "box": [
+        94.51771545410156,
+        33.7517204284668,
+        124.15711975097656,
+        55.574737548828125
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.4046367108821869,
+      "box": [
+        83.35786437988281,
+        127.48640441894531,
+        138.84414672851562,
+        152.36265563964844
+      ]
+    }
+  ],
+  "summary": {
+    "waste_detections": 1,
+    "medical_waste_detections": 1,
+    "battery_detections": 5
+  },
+  "ai_analysis": {
+    "success": true,
+    "analysis": " Environmental Impact Analysis:\n- Biohazard waste: If improperly managed, biohazard waste can pose significant health risks to humans, animals, and the environment. It can lead to the spread of diseases, contamination of soil and water, and can even contribute to the development of antibiotic-resistant bacteria.\n- Battery waste: improper disposal of batteries can lead to environmental pollution as they contain heavy metals such as lead, mercury, and cadmium which are toxic to both human health and the environment. These metals can leach into soil and water bodies and contaminate them, affecting the ecosystem and food chain.\n- Glass waste: Although less harmful than biohazard and battery waste, glass waste can still pose a risk if not managed properly. When broken, glass can pose physical hazards and can also introduce microplastics into the environment if not recycled or disposed of correctly.\n\nProper Disposal Recommendations:\n- Biohazard waste: Should be handled only by trained personnel and disposed of in secure, approved biohazard containers. These containers should then be transported to an authorized biohazard waste disposal facility.\n- Battery waste: Should be properly packaged to prevent leakage and disposed of at designated battery recycling centers. Many electronics stores and local government facilities have battery recycling options.\n- Glass waste: Should be recycled if possible. Before recycling, all food residue, labels, and metallic parts should be removed. Broken glass should be carefully swept and disposed of in the regular trash.\n\nSafety Precautions:\n- Always wear appropriate personal protective equipment (PPE) such as gloves, safety glasses, and clothing when handling waste of any kind.\n- If handling biohazard waste, make sure to use double gloves and follow strict decontamination protocols.\n- When handling batteries, avoid contact with skin and eyes, and avoid crushing or puncturing them to prevent leakage.\n\nRecycling Guidelines:\n- Glass: most glass types can be recycled. Separate glass into colors (clear, green, brown) to facilitate the recycling process.\n- Batteries: many types of batteries can be recycled. Check with your local recycling facility or electronics store for accepted battery types.\n- Biohazard waste: cannot be recycled but must be treated and disposed of at an approved biohazard waste facility.\n\nAlways check with local regulations and guidelines for specific waste management instructions in your area, as they may vary. Proper management of waste not only protects the environment and public health but also promotes sustainability.",
+    "detected_waste_types": [
+      "biohazard",
+      "battery",
+      "glass"
+    ]
+  }
+}

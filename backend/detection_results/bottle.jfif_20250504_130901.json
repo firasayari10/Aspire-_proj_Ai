@@ -1,0 +1,54 @@
+{
+  "timestamp": "2025-05-04T13:09:01.569942",
+  "image_name": "bottle.jfif",
+  "detections": [
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.5157763957977295,
+      "box": [
+        117.59209442138672,
+        0.5391347408294678,
+        224.78578186035156,
+        104.97017669677734
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.427052766084671,
+      "box": [
+        117.38159942626953,
+        32.582027435302734,
+        224.43629455566406,
+        102.06825256347656
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.40891802310943604,
+      "box": [
+        71.73328399658203,
+        34.93983840942383,
+        142.8896942138672,
+        153.32786560058594
+      ]
+    }
+  ],
+  "summary": {
+    "waste_detections": 0,
+    "medical_waste_detections": 0,
+    "battery_detections": 3
+  },
+  "ai_analysis": {
+    "success": true,
+    "analysis": " Analysis of Environmental Impact:\n\nBatteries contain heavy metals such as lead, mercury, cadmium, and nickel. These metals can be harmful to both human health and the environment if improperly disposed of. They can contaminate soil and water, potentially affecting wildlife and human populations. Moreover, batteries can also release toxic gases, posing a risk to air quality.\n\nProper Disposal Recommendations:\n\n1. Time-specific Municipal Waste Collection: Batteries should not be put in regular trash. Instead, many municipalities have specific collections for hazardous waste, including batteries, at certain times of the year. Check with your local waste management authority for the schedule in your area.\n\n2. Household Hazardous Waste (HHW) Centers: Many cities and counties have HHW facilities where you can drop off batteries and other household hazardous waste materials.\n\n3. Battery Recycling Programs: Some retail stores, car parts stores, and office supply stores may have battery recycling programs. Rechargeable batteries can often be brought back to the store where they were purchased.\n\nSafety Precautions:\n\n1. Never burn batteries, as this can release dangerous gases and toxic materials.\n2. Store batteries in a dry place, away from heat sources, and out of reach of children and pets.\n3. If a battery is damaged or leaking, handle it with care, wear gloves, and dispose of it properly according to local regulations.\n\nRecycling Guidelines:\n\n1. Separate batteries by type (e.g., alkaline, NiMH, NiCd, Lithium-ion, etc.) before recycling.\n2. Remove any protective casing or packaging if possible, and place batteries in designated recycling bins or containers provided by the recycling center.\n3. Never mix batteries with regular waste or other types of recyclables.\n4. Always make sure to follow specific guidelines provided by the recycling center for battery recycling.\n\nBy following these recommendations, you can help keep harmful substances out of the environment and promote a cleaner, healthier world for everyone.",
+    "detected_waste_types": [
+      "battery"
+    ]
+  }
+}
