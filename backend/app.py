@@ -4,7 +4,7 @@ import os
 import json
 from datetime import datetime
 import requests
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageFont
 import io
 import base64
 import numpy as np
@@ -42,6 +42,7 @@ WASTE_MODEL_PATH = os.path.join(project_root, 'models', 'best.pt')
 MEDWASTE_MODEL_PATH = os.path.join(project_root, 'models', 'medwaste.pt')
 EWASTE_MODEL_PATH = os.path.join(project_root, 'models', 'batteeries.pt')
 EFFICIENT_MODEL_PATH = os.path.join(project_root, 'models', 'efficient1.h5')
+DWASTE_MODEL_PATH = os.path.join(project_root, 'models', 'droneBest.pt')
 
 # Output directory
 RESULTS_DIR = 'detection_results'
@@ -60,6 +61,20 @@ CLASSIFICATION_CLASS_NAMES = [
     'plastic_shopping_bags', 'plastic_soda_bottles', 
     'plastic_straws', 'plastic_water_bottles'
 ]
+DRONEWASTE_CLASS_NAMES = {
+    0: "cigaret",
+    1: "glass",
+    2: "metal",
+    3: "paper",
+    4: "pile_of_trash",
+    5: "plastic_bag",
+    6: "plastic_bottle",
+    7: "trash_can",
+    8: "unkown_plastic",
+    9: "stick_wood",
+    10: "person",
+    11: "beach_material",
+}
 
 # Model variables
 waste_model = None
@@ -67,6 +82,7 @@ medwaste_model = None
 ewaste_model = None
 efficientnet_model = None
 classification_model = None
+dronewaste_model = None
 
 # Initialize Stable Diffusion pipeline
 sd_pipeline = None
@@ -163,7 +179,7 @@ Recycling guidelines
 
 def load_models():
     """Load all required models"""
-    global waste_model, medwaste_model, ewaste_model, efficientnet_model, classification_model
+    global waste_model, medwaste_model, ewaste_model, efficientnet_model, classification_model, dronewaste_model
     try:
         # Get the absolute path to the root of the project
         project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
@@ -173,11 +189,13 @@ def load_models():
         MEDWASTE_MODEL_PATH = os.path.join(project_root, 'models', 'medwaste.pt')
         EWASTE_MODEL_PATH = os.path.join(project_root, 'models', 'batteeries.pt')
         CLASSIFICATION_MODEL_PATH = os.path.join(project_root, 'models', 'efficient1.h5')
+        DRONEWASTE_MODEL_PATH = os.path.join(project_root, 'models', 'droneBest.pt')
 
         waste_model = YOLO(WASTE_MODEL_PATH)
         medwaste_model = YOLO(MEDWASTE_MODEL_PATH)
         ewaste_model = YOLO(EWASTE_MODEL_PATH)
         classification_model = load_classification_model(CLASSIFICATION_MODEL_PATH)
+        dronewaste_model = YOLO(DRONEWASTE_MODEL_PATH)
 
         return True
     except Exception as e:
@@ -333,7 +351,7 @@ def generate_image_with_sd(description):
 
 @app.route('/api/health', methods=['GET'])
 def health_check():
-    if not all([waste_model, medwaste_model, ewaste_model, efficientnet_model, classification_model]):
+    if not all([waste_model, medwaste_model, ewaste_model, efficientnet_model, classification_model, dronewaste_model]):
         return jsonify({"status": "unhealthy", "message": "One or more models not loaded"}), 500
     return jsonify({"status": "healthy", "message": "All models loaded"})
 
@@ -688,6 +706,85 @@ def generate_image():
     except Exception as e:
         print(f"❌ Error in generate_image: {str(e)}")
         print(f"Traceback: {traceback.format_exc()}")
+        return jsonify({
+            'success': False,
+            'error': f"Internal server error: {str(e)}"
+        }), 500
+
+@app.route('/api/process-drone-image', methods=['POST'])
+def process_drone_image():
+    if dronewaste_model is None:
+        return jsonify({
+            'success': False,
+            'error': 'Drone waste model not loaded. Please check server logs.'
+        }), 500
+
+    try:
+        if 'image' not in request.files:
+            return jsonify({
+                'success': False,
+                'error': 'No image file provided'
+            }), 400
+
+        file = request.files['image']
+        image_name = file.filename
+        image_bytes = file.read()
+        image = Image.open(io.BytesIO(image_bytes))
+        if image.mode != 'RGB':
+            image = image.convert('RGB')
+
+        # Run detection
+        results = dronewaste_model(image)
+        result = results[0]
+
+        # Visualization (optional, similar to other endpoints)
+        vis_image = image.copy()
+        draw = ImageDraw.Draw(vis_image)
+        try:
+            font = ImageFont.truetype("arial.ttf", 70)
+        except:
+            font = ImageFont.load_default()
+        for box in result.boxes:
+            class_id = int(box.cls[0])
+            confidence = float(box.conf[0])
+            if confidence >= 0.4:
+                x1, y1, x2, y2 = box.xyxy[0].tolist()
+                class_name = DRONEWASTE_CLASS_NAMES.get(class_id, f"Class {class_id}")
+                label = f"{class_name} {confidence:.2f}"
+                # Calculate text bounding box
+                text_bbox = draw.textbbox((x1, y1), label, font=font)
+                # Draw rectangle background for text
+                draw.rectangle([text_bbox[0]-2, text_bbox[1]-2, text_bbox[2]+2, text_bbox[3]+2], fill=(0, 0, 0))
+                # Draw text on top
+                draw.text((x1, y1), label, fill='white', font=font)
+                draw.rectangle([x1, y1, x2, y2], outline=(0, 255, 255), width=2)
+
+        buffered = io.BytesIO()
+        vis_image.save(buffered, format="JPEG", quality=95)
+        img_str = base64.b64encode(buffered.getvalue()).decode()
+
+        # Prepare detections
+        detections = []
+        for box in result.boxes:
+            class_id = int(box.cls[0])
+            confidence = float(box.conf[0])
+            if confidence >= 0.4:
+                class_name = DRONEWASTE_CLASS_NAMES.get(class_id, f"Class {class_id}")
+                detections.append({
+                    'class': class_id,
+                    'class_name': class_name,
+                    'confidence': confidence,
+                    'box': box.xyxy[0].tolist()
+                })
+
+        return jsonify({
+            'success': True,
+            'image': img_str,
+            'detections': detections
+        })
+
+    except Exception as e:
+        print(f"Error processing drone image: {str(e)}")
         return jsonify({
             'success': False,
             'error': f"Internal server error: {str(e)}"

@@ -4,6 +4,7 @@ import './App.css';
 import HomePage from './components/HomePage';
 import ImageDropzone from './components/ImageDropzone';
 import BackButton from './components/BackButton';
+import DroneImageDropzone from './components/DroneImageDropzone';
 
 function App() {
   return (
@@ -22,10 +23,9 @@ function App() {
           <Route path="/drone" element={
             <>
               <BackButton />
-              <div className="coming-soon">
-                <h2>Drone Footage Analysis</h2>
-                <p>This feature is coming soon!</p>
-              </div>
+              <main className="App-main">
+                <DroneImageDropzone />
+              </main>
             </>
           } />
         </Routes>

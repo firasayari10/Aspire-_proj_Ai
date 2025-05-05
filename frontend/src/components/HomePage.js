@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import './HomePage.css';
 import espritLogo from '../images/esprit.png';
 import secondlifelogo from '../images/Logo Second Life final.png';
+import DroneImageDropzone from './DroneImageDropzone';
+
 const HomePage = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [currentReview, setCurrentReview] = useState(0);
