@@ -1,0 +1,99 @@
+{
+  "timestamp": "2025-05-05T02:05:23.658710",
+  "image_name": "images.jpeg",
+  "detections": [
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.7561754584312439,
+      "box": [
+        62.19771194458008,
+        94.72518157958984,
+        127.34601593017578,
+        182.66189575195312
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.6486735939979553,
+      "box": [
+        249.00485229492188,
+        97.30885314941406,
+        275.0,
+        182.59303283691406
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.5763791799545288,
+      "box": [
+        187.31324768066406,
+        133.79010009765625,
+        251.31857299804688,
+        182.5285186767578
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.5322129726409912,
+      "box": [
+        168.7178955078125,
+        136.24954223632812,
+        258.7344970703125,
+        182.7327423095703
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.4642660617828369,
+      "box": [
+        223.00897216796875,
+        54.2416877746582,
+        275.0,
+        105.53994750976562
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.46108028292655945,
+      "box": [
+        190.29725646972656,
+        96.04552459716797,
+        252.10694885253906,
+        182.3524932861328
+      ]
+    },
+    {
+      "model": "ewaste",
+      "class": 2,
+      "class_name": "Battery",
+      "confidence": 0.3947335183620453,
+      "box": [
+        28.48875617980957,
+        22.698617935180664,
+        90.46649932861328,
+        107.7317886352539
+      ]
+    }
+  ],
+  "summary": {
+    "waste_detections": 0,
+    "medical_waste_detections": 0,
+    "battery_detections": 7
+  },
+  "ai_analysis": {
+    "success": false,
+    "error": "401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions"
+  }
+}

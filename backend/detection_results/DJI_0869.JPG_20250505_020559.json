@@ -1,0 +1,14 @@
+{
+  "timestamp": "2025-05-05T02:05:59.272525",
+  "image_name": "DJI_0869.JPG",
+  "detections": [],
+  "summary": {
+    "waste_detections": 0,
+    "medical_waste_detections": 0,
+    "battery_detections": 0
+  },
+  "ai_analysis": {
+    "success": false,
+    "error": "401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions"
+  }
+}
